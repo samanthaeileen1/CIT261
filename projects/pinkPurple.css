@@ -2,5 +2,15 @@ h1
 {
     color:pink;
     font-size: 50px;
-    
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
+
+
+}
+
+a 
+{
+    color:#a134d3;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    text-align: center;
 }
