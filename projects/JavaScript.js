@@ -1,3 +1,3 @@
-function changeHTML() {
-    document.getElementById("change").innerHTML = "BOOM!";
+function changeHTML(value) {
+    document.getElementById("change").innerHTML = value;
 }
