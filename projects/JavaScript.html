@@ -8,9 +8,17 @@
 <body style="text-align:center">
 <h1>JavaScript</h1>
 <p id="change">Change me!</p>
-<p>Type in the text you want to change.</p><br>
-<input id="textBox" type="text"></input><br>
+<!-- <p>Type in the text you want to change.</p><br>
+<input id="textBox" type="text"></input><br> -->
 <input type="button" class="button" onclick="changeHTML();" value="Click to Change"></input>
-<link href="javaScriptFiles/JavaScript.js"/>
+<!-- <link href="projects/javaScriptFiles/JavaScript.js"/> -->
+<script>
+function changeHTML() {
+    document.getElementById("change").innerHTML = "BOOM!";
+}
+</script>
+
+
 </body>
+
 </html>
