@@ -52,11 +52,9 @@
   h1
 {
 
-   font-size: 80pts;
-   text-shadow: 3px 3px white; /*BROWN*/
-
+    font-size: 80pts;
+    text-shadow: 3px 3px white; /*BROWN*/
     color:pink;
-    font-size: 50px;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     text-align: center;
     background-color: khaki;
