@@ -1,4 +1,4 @@
-/* .box {
+ .box {
     background: purple;
     border-radius: 5px;
     height: 40px;
@@ -8,8 +8,8 @@
   } 
 
 .box:hover  {
-    transform: scale(2);
-} */
+    transform: scale(2); 
+}
 
 div {
     width: 100px;
