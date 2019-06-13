@@ -26,8 +26,8 @@
     height: 80px; 
 }
 
-.purpleBox3 {
-    background: purple;
+.scale {
+    background: khaki;
     border-radius: 5px;
     height: 40px;
     margin: 50px auto;
@@ -35,7 +35,7 @@
 
   } 
 
-.purpleBox3:hover  {
+.scale:hover  {
     transform: scale(1,2); 
 }
 
