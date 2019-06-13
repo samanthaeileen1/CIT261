@@ -12,6 +12,21 @@
     transform: scale(2); 
 }
 
+.purpleBox2 {
+    background: purple;
+    border-block-color: pink;
+    border-radius: 5px;
+    height: 40px;
+    margin: 50px auto;
+    width: 80px;
+    transition: width 3s, height 3s;
+
+  } 
+
+.purpleBox2:hover  {
+    transform: scale(2); 
+}
+
 .wrap {
     text-align: center;
 }
