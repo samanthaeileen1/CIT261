@@ -1,0 +1,25 @@
+.box {
+    background: purple;
+    border-radius: 5px;
+    height: 40px;
+    margin: 50px auto;
+    width: 80px;
+
+  } 
+
+.box:hover  {
+    transform: scale(2);
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+  }
+  
+  div:hover {
+    width: 300px;
+    height: 300px;
+  }
