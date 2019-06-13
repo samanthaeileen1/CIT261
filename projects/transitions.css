@@ -36,9 +36,8 @@
   h1
 {
 
-   /* text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);   */
    font-size: 125px;
-   text-shadow: 4px 4px white; /*BROWN*/
+   text-shadow: 3px 3px white; /*BROWN*/
 
     color:pink;
     font-size: 50px;
@@ -59,13 +58,13 @@ p
 {
     border-style: dotted;
     border-color: khaki;
-    color:#a134d3;
+    color:purple;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;    
 }
 
 .button 
 {
-    color:#a134d3;
+    color:purple;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;  
     background-color: pink; 
     border-radius: 50%;
