@@ -24,7 +24,8 @@
   } 
 
 .purpleBox2:hover  {
-    transition: scale(2); 
+    width: 160px;
+    height: 80px; 
 }
 
 .wrap {
