@@ -22,18 +22,18 @@
         // Store
         //localStorage.setItem("favFruit", document.getElementById("fruit").value);
         //var fruit = document.getElementById("fruit").innerHTML.valueOf;
-        localStorage.setItem("favFruit", "fruit");
+        window.localStorage.setItem("favFruit", "fruit");
         
         }
         
         function getFruit() {
         // Retrieve
-        document.getElementById("displayFruit").innerHTML = localStorage.getItem("favFruit");
+        document.getElementById("displayFruit").innerHTML = window.localStorage.getItem("favFruit");
         }
         
         function removeFruit() {
         //Removal
-        localStorage.removeItem("favFruit");
+        window.localStorage.removeItem("favFruit");
         }
         
 </script>
