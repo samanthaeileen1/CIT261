@@ -9,9 +9,11 @@
 
 
 function setFruit() {
-    // Store
+// Store
+//localStorage.setItem("favFruit", document.getElementById("fruit").value);
+var fruit = document.getElementById("fruit").innerHTML.valueOf;
+localStorage.setItem("favFruit", fruit);
 
-localStorage.setItem("favFruit", document.getElementById("fruit").value);
 }
 
 function getFruit() {
@@ -28,6 +30,7 @@ localStorage.removeItem("favFruit");
 </head>
 <body>
 <p>Type in your favorite fruit!</p>
+<br><br>
 <input id="fruit" type="text"></input>
 <button onclick="saveFruit()" class="button">Save Fruit</button>
 <br><br>
