@@ -1,4 +1,5 @@
-<!-- <html lang = "en-US">
+<!DOCTYPE html>
+<html lang = "en-US">
  <head>
  <meta charset="UTF-8">
  <title>JavaScript Code Topic</title>
@@ -9,60 +10,64 @@
 
 function setFruit() {
     // Store
-localStorage.setItem(“favFruit”, “pear");
+
+localStorage.setItem("favFruit", document.getElementById("fruit").value);
 }
 
 function getFruit() {
 // Retrieve
-document.getElementById(“displayFruit”).innerHTML = localStorage.getItem(“favFruit”);
+document.getElementById("displayFruit").innerHTML = localStorage.getItem("favFruit");
 }
 
 function removeFruit() {
 //Removal
-localStorage.removeItem(“favFruit”);
+localStorage.removeItem("favFruit");
 }
 
 </script>
 </head>
 <body>
+<p>Type in your favorite fruit!</p>
+<input id="fruit" type="text"></input>
+<button onclick="saveFruit()" class="button">Save Fruit</button>
+<br><br>
+<button onclick="displayFruit()" class="button">Show Fruit</button>
+<div id="displayFruit"></div>
+<br><br>
 
-<p><button onclick="clickCounter()" type="button">Click me!</button></p>
-<div id="result"></div>
-<p>Click the button to see the counter increase.</p>
-<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
-
-</body>
-</html> -->
-
-
-
-
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="pinkPurple.css" />
-
-<script>
-function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("result").innerHTML = "<p>You have clicked the button " + localStorage.clickcount + " time(s).</p>";
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
-  }
-}
-</script>
-</head>
-<body>
-
-<p><button onclick="clickCounter()" class="button">Click me!</button></p>
-<div id="result"></div>
-<p>Click the button to see the counter increase.</p>
-<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
 
 </body>
 </html>
+
+
+
+
+// <!-- <!DOCTYPE html>
+// <html>
+// <head>
+// <link rel="stylesheet" type="text/css" href="pinkPurple.css" />
+
+// <script>
+// function clickCounter() {
+//   if (typeof(Storage) !== "undefined") {
+//     if (localStorage.clickcount) {
+//       localStorage.clickcount = Number(localStorage.clickcount)+1;
+//     } else {
+//       localStorage.clickcount = 1;
+//     }
+//     document.getElementById("result").innerHTML = "<p>You have clicked the button " + localStorage.clickcount + " time(s).</p>";
+//   } else {
+//     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+//   }
+// }
+// </script>
+// </head>
+// <body>
+
+// <p><button onclick="clickCounter()" class="button">Click me!</button></p>
+// <div id="result"></div>
+// <p>Click the button to see the counter increase.</p>
+// <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+
+// </body>
+// </html> -->
