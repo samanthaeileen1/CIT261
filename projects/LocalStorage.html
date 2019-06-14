@@ -4,29 +4,6 @@
  <meta charset="UTF-8">
  <title>JavaScript Code Topic</title>
  <link rel="stylesheet" type="text/css" href="pinkPurple.css" />
- </head>
-<script>
-
-
-function setFruit() {
-// Store
-//localStorage.setItem("favFruit", document.getElementById("fruit").value);
-//var fruit = document.getElementById("fruit").innerHTML.valueOf;
-localStorage.setItem("favFruit", "fruit");
-
-}
-
-function getFruit() {
-// Retrieve
-document.getElementById("displayFruit").innerHTML = localStorage.getItem("favFruit");
-}
-
-function removeFruit() {
-//Removal
-localStorage.removeItem("favFruit");
-}
-
-</script>
 </head>
 <body>
 <p>Type in your favorite fruit!</p>
@@ -40,7 +17,26 @@ localStorage.removeItem("favFruit");
 <div id="displayFruit"></div>
 <br><br>
 
-
+<script>
+        function setFruit() {
+        // Store
+        //localStorage.setItem("favFruit", document.getElementById("fruit").value);
+        //var fruit = document.getElementById("fruit").innerHTML.valueOf;
+        localStorage.setItem("favFruit", "fruit");
+        
+        }
+        
+        function getFruit() {
+        // Retrieve
+        document.getElementById("displayFruit").innerHTML = localStorage.getItem("favFruit");
+        }
+        
+        function removeFruit() {
+        //Removal
+        localStorage.removeItem("favFruit");
+        }
+        
+        </script>
 </body>
 </html>
 
