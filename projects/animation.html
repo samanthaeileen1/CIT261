@@ -23,7 +23,22 @@
 
 <!-- Animation two -->
 <br><br>
-    <p>Here is the second animation.
+    <p>Here is the second animation. It uses a different sytax to be able to do more
+        tansitions during the set animation period. It works by percents, like so:
+        <span class="code">
+                0%  { background-color:teal;     }
+                12% { background-color:teal;     }
+                23% { background-color: #f442b3; }
+                37% { background-color: #9241f4; }
+                67% { background-color: #f9f570;  
+                      border-radius: 50%         }
+                80% { background-color: khaki;   }
+                90% { background-color: #f99f70; }
+               100% { background-color: #fc7b37; }</span>
+        I set the duration to 10 seconds, so for this animation, it will spend the first
+        12% of the 10 seconds teal, then it will change at 23% of 10 seconds to the next color,
+        and so on and so forth throughout the animation. You notice that you can change any sort 
+        of CSS property, like border-radius. You can really do whatever you want with it!
     </p>
     <br><br>
 <div class="wrap">
