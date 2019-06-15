@@ -1,0 +1,40 @@
+/* notice that the animation is seperate
+from the element that it is animating
+(unlike transitions and transfroms) */
+
+/* This is the animation. It can be 
+Applied to any element we want. */
+@keyframes animation1 
+{
+    from { background-color:white; }
+    to   { background-color:teal;  }
+}
+
+
+@keyframes animation2 
+{
+    0%  { background-color:white;    }
+    12% { background-color:teal;     }
+    23% { background-color: #f442b3; }
+    37% { background-color: #9241f4; }
+    67% { background-color: #f9f570;  
+          border-radius: 50%           }
+    80% { background-color: khaki;   }
+    90% { background-color: #f99f70; }
+   100% { background-color: #fc7b37; }
+
+
+}
+
+
+.code 
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: teal;
+}
+
+p 
+{
+    color:#a134d3;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;    
+}
