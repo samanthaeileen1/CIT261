@@ -6,14 +6,14 @@ from the element that it is animating
 Applied to any element we want. */
 @keyframes animation1 
 {
-    from { background-color:white; }
+    from { background-color:purple; }
     to   { background-color:teal;  }
 }
 
 
 @keyframes animation2 
 {
-    0%  { background-color:white;    }
+    0%  { background-color:teal;    }
     12% { background-color:teal;     }
     23% { background-color: #f442b3; }
     37% { background-color: #9241f4; }
@@ -43,7 +43,7 @@ p
 {
     width: 175px;
     height: 300px;
-    background-color:purple;
+    background-color:rgb(224, 191, 224);
     animation-name: animation1;
     animation-delay: 1s;
     animation-duration: 5s;
