@@ -57,3 +57,14 @@ p
     animation-duration: 6s;
     border-radius: 5px;
 }
+
+h1
+{
+   font-family: Impact, Charcoal, sans-serif;
+   color:#442463; /*PURPLE*/
+   text-align:center;
+   background-color:teal;
+   font-size: 70px;
+   text-shadow: 2px 2px #245d63; /*dark teal*/ 
+
+}
