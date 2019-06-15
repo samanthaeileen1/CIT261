@@ -48,6 +48,7 @@ p
     animation-delay: 1s;
     animation-duration: 5s;
     animation-iteration-count:infinite;
+    display:inline-block;
 }
 
 .div2
@@ -59,6 +60,7 @@ p
     animation-duration: 10s;
     border-radius: 5px;
     animation-iteration-count:10;
+    display:inline-block;
 }
 
 h1
