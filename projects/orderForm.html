@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html lang = "en-US">
+
+<head>
+   <meta charset="utf-8" name="viewport" content="width=device-width,
+   initial-scale=1.0">
+   <link href="orderForm.css" rel="stylesheet">
+   <title>Samantha Christensen - Home Page</title>
+   <style>
+
+      table
+      {
+         width:100%; 
+         color:purple; 
+         border: 5px; 
+         border-style:solid; 
+         border-color:pink;
+         border-width:3px; 
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+         background-color:#E6E6FA;
+         margin:5px;   
+         border-radius: 4px; /* Rounded borders */
+      }
+      
+   
+
+     /*SUBMIT BUTTON*/
+      input[type=submit] 
+      {
+        font-size: 30px; 
+        background-color: pink;
+        color: purple;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 65px;
+        width: 150px;
+        font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+      }
+   
+
+      /*RESET BUTTON*/
+      input[type=reset] 
+      {
+        font-size: 30px; 
+        background-color: pink;
+        color: purple;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 65px;
+        width: 150px;
+        font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+      }
+
+
+   </style>
+</head>
+
+<body onload="setFocus(); hideErrors();" >
+
+    <!--BREAKS FOR STYLE-->
+   <br/>
+   <br/>
+   <br/>
+   <!--FORM-->
+   <div class="container">
+  
+    <h2>ORDER SOME ART</h2>
+
+    <!--FIRST NAME-->
+    <form action="" id="form">
+    <label>First Name</label>
+    <input type="text" class="mainLoginInput" id="fname" name="firstname" placeholder="Your name..">
+
+    <!--LAST NAME-->
+    <label>Last Name</label>
+    <input type="text" class="mainLoginInput" id="lname" name="lastname" placeholder="Your last name..">
+
+    <!--PHONE-->
+    <label>Phone</label>
+     <span id = "phoneError" style="font-weight: bold">&nbsp;&nbsp;&nbsp;Please enter a valid phone number.</span>
+    <input type="text" onchange="return validatePhone()" class="mainLoginInput" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+
+    <!--CREDIT CARD-->
+    <label>Credit Card Number</label> 
+      <span id = "cardError"style="font-weight: bold">&nbsp;&nbsp;&nbsp;Please enter a valid credit card number.</span>
+   </label>
+    <input type="text" onchange="return validateCard()" class="mainLoginInput" id="card" name="card" placeholder="xxxxxxxxxxxxxxxx">
+   
+   <!--CREDIT CARD TYPE-->
+    <label>Card Expiration Date</label>
+    <span id = "dateError" style="font-weight: bold">&nbsp;&nbsp;&nbsp;Please enter a valid expiration date.</span>
+    <input type="text" onchange="return validateDate()" class="mainLoginInput" id="cardDate" name="cardDate" placeholder="2021">
+
+   <!--CREDIT CARD TYPE-->
+    <label>Card Type</label>
+    <select id="cardType" name="cardType">
+      <option value="Visa">Visa</option>
+      <option value="MasterCard">MasterCard</option>
+      <option value="AmericanExpress">AmericanExpress</option>
+    </select>
+   
+   <!--ADDRESS-->
+    <label>Address</label>
+    <textarea class="mainLoginInput" id="address" name="address" placeholder="Street address, city, state, and zip" style="height:200px"></textarea>
+
+    <!--BREAKS FOR STYLE-->
+   <br/>
+   <br/>
+
+    <!--TABLE-->
+    <table >
+         <th>PRODUCTS</th>
+         <th>SELECT</th>
+         <th>COST</th>
+          <th>DESCRIPTION</th>
+          
+      <!--BERRIES-->
+      <tr style="text-align:center">
+         <td> 
+            <img src="berries.jpg" alt="berries" height="150" width="150">
+         </td>
+         <td>
+            <input onclick="return total()" type="checkbox" id = "berries" value="60">Watercolor Berries
+         </td>
+         <td>$60</td>
+         <td>Watercolor/Pencil Print 40 x 40</td>
+      </tr>
+      <!--CABBAGE ROSES-->
+      <tr style="text-align:center">
+         <td> 
+            <img src="cabbageRoses.jpg" alt="Cabbage Roses" height="150" width="150">
+         </td>
+         <td>
+             <input onclick="return total()" type="checkbox" id = "cabbageRoses" value="20">Cabbage Roses
+         </td>
+         <td>$20</td>
+         <td>Watercolor/Pen Print 15 x 15</td>
+      </tr>
+      <!--SUMMER ROSES-->
+      <tr style="text-align:center">
+         <td> 
+             <img src="roses.jpg" alt="Roses" height="150" width="150">
+         </td>
+         <td>
+             <input onclick="return total()" type="checkbox" id = "summerRoses" value="30">Summer Roses
+         </td>
+         <td>$30</td>
+         <td>Watercolor Print 24 x 24</td>
+      </tr>
+      <!--SUMMER ROSES-->
+      <tr style="text-align:center">
+         <td> 
+             <img src="photoPaintings.jpg" alt="Photo of Paintings" height="184" width="150">
+         </td>
+         <td>
+             <input onclick= "return total()" type="checkbox" id = "florals" value="25">Florals
+         </td>
+         <td>$25</td>
+         <td>Photo Print 36 x 24</td>
+      </tr>
+   </table>
+      
+   <!--BREAKS FOR STYLE-->
+   <br/>
+   <br/>
+   <br/>
+
+   <!--BUTTONS-->
+   <div>
+      <input type="submit" value="Submit" onclick=" return validate()">
+      <input type="Reset"  value="Reset"  onreset="setFocus()">
+   </div>
+
+   <!--TOTAL-->
+   <div>
+      <h2 style="font-size: 30" id="total">TOTAL:
+      </h2>
+
+   </div>
+  
+  </form>
+</div>
+
+
+   <!--BREAKS FOR STYLE-->
+   <br/>
+   <br/>
+
+   <!--FOOTER-->
+   <footer>“Every artist was first an amateur” -Ralph Waldo Emerson</footer>
+   <!--OUR JAVA SCRIPT THAT RUNS THE SHOW-->
+   <script src="assign06.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+
+      /*HEADERS, PARAGRAPH, FOOTER*/
+      h1
+      {
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+         color:pink;
+         text-align:center;
+         background-color:#E6E6FA; /*LILAC*/
+         height: 300px;
+         font-size: 70px;
+         text-shadow: 2px 2px purple;
+
+      }
+
+      h2
+      {
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+         text-shadow: 2px 2px purple;
+         color:pink;
+         font-size: 50px;
+      }
+
+      h3
+      {
+        font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+         text-shadow: 2px 2px purple;
+         color:pink;
+         font-size: 30px;
+      }
+
+      h4
+      {
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+         color:purple;
+         font-weight: bold;
+      }
+
+      p
+      {
+         color:purple; 
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+         text-align:center;
+         font-size:16px;
+      }
+
+      table
+      {
+         width:100%; 
+         color:purple; 
+         border: 5px; 
+         border-style:solid; 
+         border-color:pink;
+         border-width:3px; 
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+         background-color:#E6E6FA;
+         margin:5px;   
+         border-radius: 4px; /* Rounded borders */
+      }
+      footer
+      {
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+         font-weight: bold; 
+         font-size: 20px; 
+         color:purple; 
+         text-align:center; 
+         background-color: #E6E6FA;
+      }
+
+      /*SELECT*/
+      select
+      {
+          font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      }
+
+   
+     
+      /*INPUT FORM*/
+      input[type=text], select, textarea 
+      {
+        width: 100%; 
+        padding: 12px; 
+        border: 1px dotted purple;
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; 
+        margin-bottom: 16px; 
+        resize: vertical; 
+        font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+      }
+
+      /* Add a background color and some padding around the form */
+      .container 
+      {
+        border-radius: 5px;
+        background-color: #E6E6FA; /*LILAC*/
+        padding: 20px;
+        font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+        color:purple;
+
+      }
+
+     /*SUBMIT BUTTON*/
+      input[type=submit] 
+      {
+        background-color: pink;
+        color: purple;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+      }
+
+    
+      input[type=submit]:hover 
+      {
+        background-color: #E6E6FA; /*LILAC*/
+      }
+
+
+
+      /*RESET BUTTON*/
+      input[type=reset] 
+      {
+        background-color: pink;
+        color: purple;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
+      }
+
+   
+      input[type=reset]:hover 
+      {
+        background-color: #E6E6FA; /*LILAC*/
+      }
+
+      /*TO CHANGE PLACE HOLDER FONT*/
+      .mainLoginInput::-webkit-input-placeholder 
+      {
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      }
+
+      .mainLoginInput:-ms-input-placeholder 
+      {
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      }
+
+      .mainLoginInput:-moz-placeholder 
+      {
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      }
+
+      .mainLoginInput::-moz-placeholder 
+      {
+        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      }
+      
+      /*CHECK BOXES*/
+      input[type='checkbox']
+      {
+         color:#FF69B4; 
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+      }
+      
