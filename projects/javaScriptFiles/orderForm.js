@@ -64,17 +64,18 @@ function total() {
  }
  
  function validateDate() {
-   var dom = document.getElementById("cardDate");
-   var pattern  = /^([0-1][0-9])(\/)([2]{1}[0]{0}[1-9]{1}[0-9]{1})$/;
-    console.log("validateDate called. ");
+   var dom     = document.getElementById("cardDate");
+   var pattern = /^([0-1][0-9])(\/)([2]{1}[0]{0}[1-9]{1}[0-9]{1})$/;
+   var e       = document.getElementById("dateError");
+   console.log("validateDate called. ");
  
    if(dom.value.match(pattern)) {
-       console.log("match returned true");
+    console.log("match returned true");
      return true;
    }
    else {
        console.log("match returned false.");
-     dom.style.visibility = "visible";
+     e.style.visibility = "visible";
      return false;
    }
  
