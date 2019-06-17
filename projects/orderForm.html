@@ -76,27 +76,27 @@
     <!--FIRST NAME-->
     <form action="" id="form">
     <label>First Name</label>
-    <input type="text" class="mainLoginInput" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" class="input" id="fname" name="firstname" placeholder="Your name..">
 
     <!--LAST NAME-->
     <label>Last Name</label>
-    <input type="text" class="mainLoginInput" id="lname" name="lastname" placeholder="Your last name..">
+    <input type="text" class="input" id="lname" name="lastname" placeholder="Your last name..">
 
     <!--PHONE-->
     <label>Phone</label>
      <span id = "phoneError" style="font-weight: bold">&nbsp;&nbsp;&nbsp;Please enter a valid phone number.</span>
-    <input type="text" onchange="return validatePhone()" class="mainLoginInput" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+    <input type="text" onchange="return validatePhone()" class="input" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
 
     <!--CREDIT CARD-->
     <label>Credit Card Number</label> 
       <span id = "cardError"style="font-weight: bold">&nbsp;&nbsp;&nbsp;Please enter a valid credit card number.</span>
    </label>
-    <input type="text" onchange="return validateCard()" class="mainLoginInput" id="card" name="card" placeholder="xxxxxxxxxxxxxxxx">
+    <input type="text" onchange="return validateCard()" class="input" id="card" name="card" placeholder="xxxxxxxxxxxxxxxx">
    
    <!--CREDIT CARD TYPE-->
     <label>Card Expiration Date</label>
     <span id = "dateError" style="font-weight: bold">&nbsp;&nbsp;&nbsp;Please enter a valid expiration date.</span>
-    <input type="text" onchange="return validateDate()" class="mainLoginInput" id="cardDate" name="cardDate" placeholder="2021">
+    <input type="text" onchange="return validateDate()" class="input" id="cardDate" name="cardDate" placeholder="2021">
 
    <!--CREDIT CARD TYPE-->
     <label>Card Type</label>
@@ -108,7 +108,7 @@
    
    <!--ADDRESS-->
     <label>Address</label>
-    <textarea class="mainLoginInput" id="address" name="address" placeholder="Street address, city, state, and zip" style="height:200px"></textarea>
+    <textarea class="input" id="address" name="address" placeholder="Street address, city, state, and zip" style="height:200px"></textarea>
 
     <!--BREAKS FOR STYLE-->
    <br/>
@@ -124,7 +124,7 @@
       <!--BERRIES-->
       <tr style="text-align:center">
          <td> 
-            <img src="berries.jpg" alt="berries" height="150" width="150">
+            <img src="C:\Users\samch\Desktop\photos\berries.jpg" alt="berries" height="150" width="150">
          </td>
          <td>
             <input onclick="return total()" type="checkbox" id = "berries" value="60">Watercolor Berries
@@ -135,7 +135,7 @@
       <!--CABBAGE ROSES-->
       <tr style="text-align:center">
          <td> 
-            <img src="cabbageRoses.jpg" alt="Cabbage Roses" height="150" width="150">
+            <img src="C:\Users\samch\Desktop\photos\cabbageRoses.jpg" alt="Cabbage Roses" height="150" width="150">
          </td>
          <td>
              <input onclick="return total()" type="checkbox" id = "cabbageRoses" value="20">Cabbage Roses
@@ -146,7 +146,7 @@
       <!--SUMMER ROSES-->
       <tr style="text-align:center">
          <td> 
-             <img src="roses.jpg" alt="Roses" height="150" width="150">
+             <img src="C:\Users\samch\Desktop\photos\roses.jpg" alt="Roses" height="150" width="150">
          </td>
          <td>
              <input onclick="return total()" type="checkbox" id = "summerRoses" value="30">Summer Roses
@@ -157,7 +157,7 @@
       <!--SUMMER ROSES-->
       <tr style="text-align:center">
          <td> 
-             <img src="photoPaintings.jpg" alt="Photo of Paintings" height="184" width="150">
+             <img src="C:\Users\samch\Desktop\photos\photoPaintings.jpg" alt="Photo of Paintings" height="184" width="150">
          </td>
          <td>
              <input onclick= "return total()" type="checkbox" id = "florals" value="25">Florals
@@ -198,5 +198,5 @@
    <!--OUR JAVA SCRIPT THAT RUNS THE SHOW-->
    <script src="javaScriptFiles/orderForm.js"></script>
 </body>
-
+ 
 </html>

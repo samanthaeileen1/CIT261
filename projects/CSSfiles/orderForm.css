@@ -141,25 +141,21 @@
       }
 
       /*TO CHANGE PLACE HOLDER FONT*/
-      .mainLoginInput::-webkit-input-placeholder 
+      .input::-webkit-input-placeholder 
       {
         font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
       }
 
-      .mainLoginInput:-ms-input-placeholder 
+      .input:-ms-input-placeholder 
       {
         font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
       }
 
-      .mainLoginInput:-moz-placeholder 
+      .input:-moz-placeholder 
       {
         font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
       }
 
-      .mainLoginInput::-moz-placeholder 
-      {
-        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-      }
       
       /*CHECK BOXES*/
       input[type='checkbox']
