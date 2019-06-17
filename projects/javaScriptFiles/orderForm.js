@@ -2,7 +2,10 @@ function total() {
     var total = 0;
     
     //reset colors
-    document.getElementById("floralWords").style.color = "purple";
+    document.getElementById("floralWords").style.color  = "purple";
+    document.getElementById("summerWords").style.color  = "purple";
+    document.getElementById("berriesWords").style.color = "purple";
+    document.getElementById("cabbageWords").style.color = "purple"; 
 
 
     if (document.getElementById("florals").checked) {
@@ -12,12 +15,15 @@ function total() {
     } 
     if (document.getElementById("summerRoses").checked) {
        total += document.getElementById("summerRoses").value *1;
+       document.getElementById("summerWords").style.color = "#e20641"
     } 
     if (document.getElementById("berries").checked) {
        total += document.getElementById("berries").value *1;
+       document.getElementById("berriesWords").style.color = "#e20641";
     } 
     if (document.getElementById("cabbageRoses").checked) {
        total += document.getElementById("cabbageRoses").value *1;
+       document.getElementById("cabbageWords").style.color = "#e20641";
     } 
  
     document.getElementById("total").innerHTML = ("TOTAL: $ " + total *1);
