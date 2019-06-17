@@ -26,11 +26,8 @@ function total() {
     var e2 = document.getElementById("cardError");
     e2.style.visibility = "hidden";
     
-    var e3 = document.getElementById("monthError");
+    var e3 = document.getElementById("dateError");
     e3.style.visibility = "hidden";
-    
-    var e4 = document.getElementById("yearError");
-    e4.style.visibility = "hidden";
  
  }
  
@@ -67,25 +64,15 @@ function total() {
  }
  
  function validateDate() {
-   var dom = document.getElementById("cardDateMonth");
-   var dom2 = document.getElementById("cardDateYear");
-   var pattern  = /^\d{2}$/;
-   var pattern2 = /^\d{4}$/;
-   var e  = document.getElementById("monthError");
-   var e2 = document.getElementById("yearError"); 
+   var dom = document.getElementById("cardDate");
+   var pattern  = /^([0-1][0-9])(\/)([2]{1}[0]{0}[1-9]{1}[0-9]{1})$/;
+
  
    if(dom.value.match(pattern)) {
      return true;
    }
    else {
-     e.style.visibility = "visible";
-     return false;
-   }
-   if(dom2.value.match(pattern2)) {
-     return true;
-   }
-   else {
-     e2.style.visibility = "visible";
+     dom.style.visibility = "visible";
      return false;
    }
  
