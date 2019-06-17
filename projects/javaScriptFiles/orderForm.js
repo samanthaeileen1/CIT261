@@ -4,7 +4,7 @@ function total() {
     if (document.getElementById("florals").checked) {
        total += document.getElementById("florals").value *1;
        //CSS style change
-       document.getElementById("florals").style.color = "purple";
+       document.getElementById("florals").style.color = "#e20641";
     } 
     if (document.getElementById("summerRoses").checked) {
        total += document.getElementById("summerRoses").value *1;
