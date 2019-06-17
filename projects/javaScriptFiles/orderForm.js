@@ -3,6 +3,8 @@ function total() {
  
     if (document.getElementById("florals").checked) {
        total += document.getElementById("florals").value *1;
+       //CSS style change
+       document.getElementById("florals").style.color = "purple";
     } 
     if (document.getElementById("summerRoses").checked) {
        total += document.getElementById("summerRoses").value *1;
@@ -137,4 +139,11 @@ function total() {
  
    document.getElementById("fname").focus();
  
+ }
+
+ function displayOrderSummary() {
+    var order = 
+
+
+     document.getElementById("orderSummary").innerHTML = order;
  }
