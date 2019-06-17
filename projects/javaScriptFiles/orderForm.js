@@ -1,6 +1,10 @@
 function total() {
     var total = 0;
- 
+    
+    //reset colors
+    document.getElementById("floralWords").style.color = "purple";
+
+
     if (document.getElementById("florals").checked) {
        total += document.getElementById("florals").value *1;
        //CSS style change
