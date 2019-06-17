@@ -62,20 +62,8 @@
    </style>
 </head>
 
-<body onload="setFocus();" >
-   <script>
-   function hideErrors() {
-      var e = document.getElementById("phoneError");
-      e.style.visibility = "hidden";
-   
-      var e2 = document.getElementById("cardError");
-      e2.style.visibility = "hidden";
-      
-      var e3 = document.getElementById("dateError");
-      e3.style.visibility = "hidden";
-   
-   }
-   </script>
+<body onload="setFocus(); hideErrors();" >
+
     <!--BREAKS FOR STYLE-->
    <br/>
    <br/>
