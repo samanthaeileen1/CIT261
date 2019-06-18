@@ -85,8 +85,9 @@ function total() {
    var e       = document.getElementById("dateError");
  
    if(dom.value.match(pattern)) {
-    //var e3 = document.getElementById("dateError");
-   // e3.style.visibility = "hidden";
+       window.alert("pattern matches");
+    var e3 = document.getElementById("dateError");
+   e3.style.visibility = "hidden";
      e.style.visibility = "hidden";
      return true;
    }
