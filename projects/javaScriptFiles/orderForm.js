@@ -155,6 +155,16 @@ function total() {
  }
 
  function displayOrderSummary() {
-    var order = "<h1>Order</h1>";
+    
+    var c = document.getElementById("card");
+    var y = document.getElementById("cardDateYear");
+    var m = document.getElementById("cardDateMonth");
+    var p = document.getElementById("phone");
+    var f = document.getElementById("fname");
+    var l = document.getElementById("lname");
+    var a = document.getElementById("address");
+
+    var order = "<h1>Order</h1><p>" + c + "</p>";
+
      document.getElementById("orderSummary").innerHTML = order;
  }

@@ -166,6 +166,15 @@
 
       .summary {
         transition: 3s;
-        
+
       }
+
+      .welcome {
+        transition:3s;
+      }
+
+      .welcome::hover {
+        width: 100%;
+      }
+
       
