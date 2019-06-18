@@ -83,7 +83,7 @@ function total() {
    var dom     = document.getElementById("cardDate");
    var pattern = /^([0-1][0-9])(\/)([2]{1}[0]{0}[1-9]{1}[0-9]{1})$/;
    var e       = document.getElementById("dateError");
- 
+   window.alert("validate date called");
    if(dom.value.match(pattern)) {
        window.alert("pattern matches");
     var e3 = document.getElementById("dateError");
