@@ -48,8 +48,9 @@ function total() {
    var dom = document.getElementById("card");
    var pattern = /^\d{16}/;
    var e = document.getElementById("cardError");
- 
+    window.alert("validateCard called");
    if(dom.value.match(pattern)) {
+       window.alert("pattern matches");
      e.style.visiblity = "hidden";
      return true;
    }
