@@ -51,7 +51,7 @@ function total() {
     window.alert("validateCard called");
    if(dom.value.match(pattern)) {
        window.alert("pattern matches");
-     e.style.visiblity = "hidden";
+       document.getElementById("cardError").style.visiblity = "hidden";
      return true;
    }
    else {
