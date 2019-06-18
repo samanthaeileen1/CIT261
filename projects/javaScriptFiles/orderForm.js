@@ -67,9 +67,7 @@ function total() {
    var e = document.getElementById("phoneError");
  
    if(dom.value.match(pattern)) {
-    //var e = document.getElementById("phoneError");
     e.style.visibility = "hidden";
-   // e.style.visibilty = "hidden";
      return true;
    }
    else {
@@ -81,14 +79,16 @@ function total() {
  
  function validateDate() {
    var dom     = document.getElementById("cardDate");
-   var pattern = /^[0-9]{2}\/[1-9]{4})$/;
+   var pattern = /^(\d{2})\/(\d{4})$/;
    var e       = document.getElementById("dateError");
+
    window.alert("validate date called");
+   
    if(dom.value.match(pattern)) {
-       window.alert("pattern matches");
+    window.alert("pattern matches");
     var e3 = document.getElementById("dateError");
-   e3.style.visibility = "hidden";
-     e.style.visibility = "hidden";
+     e3.style.visibility = "hidden";
+    // e.style.visibility = "hidden";
      return true;
    }
    else {
@@ -157,8 +157,6 @@ function total() {
  }
 
  function displayOrderSummary() {
-    var order = 
-
-
+    var order = "<h1>Order</h1>";
      document.getElementById("orderSummary").innerHTML = order;
  }
