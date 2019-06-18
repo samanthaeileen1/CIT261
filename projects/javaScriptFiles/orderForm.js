@@ -48,11 +48,12 @@ function total() {
    var dom = document.getElementById("card");
    var pattern = /^\d{16}/;
    var e = document.getElementById("cardError");
-    window.alert("validateCard called");
+    //window.alert("validateCard called");
    if(dom.value.match(pattern)) {
-       window.alert("pattern matches");
-       document.getElementById("cardError").style.visiblity = "hidden";
-     return true;
+       //window.alert("pattern matches");
+       var e2 = document.getElementById("cardError");
+       e2.style.visibility = "hidden";
+       return true;
    }
    else {
      e.style.visibility = "visible";
