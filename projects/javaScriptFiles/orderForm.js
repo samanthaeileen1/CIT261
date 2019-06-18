@@ -67,7 +67,7 @@ function total() {
    var e = document.getElementById("phoneError");
  
    if(dom.value.match(pattern)) {
-    var e = document.getElementById("phoneError");
+    //var e = document.getElementById("phoneError");
     e.style.visibility = "hidden";
    // e.style.visibilty = "hidden";
      return true;
@@ -85,8 +85,8 @@ function total() {
    var e       = document.getElementById("dateError");
  
    if(dom.value.match(pattern)) {
-    var e3 = document.getElementById("dateError");
-    e3.style.visibility = "hidden";
+    //var e3 = document.getElementById("dateError");
+   // e3.style.visibility = "hidden";
      e.style.visibility = "hidden";
      return true;
    }
