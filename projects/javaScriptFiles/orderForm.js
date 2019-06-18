@@ -50,7 +50,6 @@ function total() {
    var e = document.getElementById("cardError");
 
    if(dom.value.match(pattern)) {
-       //var e2 = document.getElementById("cardError");
        e.style.visibility = "hidden";
        return true;
    }
