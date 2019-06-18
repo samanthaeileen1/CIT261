@@ -67,6 +67,7 @@ function total() {
    var e = document.getElementById("phoneError");
  
    if(dom.value.match(pattern)) {
+       window.alert("matches pattern");
     e.style.visibilty = "hidden";
      return true;
    }
@@ -83,6 +84,7 @@ function total() {
    var e       = document.getElementById("dateError");
  
    if(dom.value.match(pattern)) {
+    window.alert("matches pattern");
      e.style.visibility = "hidden";
      return true;
    }
