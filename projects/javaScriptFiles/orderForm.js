@@ -50,6 +50,7 @@ function total() {
    var e = document.getElementById("cardError");
  
    if(dom.value.match(pattern)) {
+     e.style.visiblity = "hidden";
      return true;
    }
    else {
@@ -66,6 +67,7 @@ function total() {
    var e = document.getElementById("phoneError");
  
    if(dom.value.match(pattern)) {
+    e.style.visibilty = "hidden";
      return true;
    }
    else {
@@ -79,10 +81,9 @@ function total() {
    var dom     = document.getElementById("cardDate");
    var pattern = /^([0-1][0-9])(\/)([2]{1}[0]{0}[1-9]{1}[0-9]{1})$/;
    var e       = document.getElementById("dateError");
-   console.log("validateDate called. ");
  
    if(dom.value.match(pattern)) {
-    console.log("match returned true");
+     e.style.visibility = "hidden";
      return true;
    }
    else {
