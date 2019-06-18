@@ -67,8 +67,9 @@ function total() {
    var e = document.getElementById("phoneError");
  
    if(dom.value.match(pattern)) {
-       window.alert("matches pattern");
-    e.style.visibilty = "hidden";
+    var e = document.getElementById("phoneError");
+    e.style.visibility = "hidden";
+   // e.style.visibilty = "hidden";
      return true;
    }
    else {
@@ -84,12 +85,12 @@ function total() {
    var e       = document.getElementById("dateError");
  
    if(dom.value.match(pattern)) {
-    window.alert("matches pattern");
+    var e3 = document.getElementById("dateError");
+    e3.style.visibility = "hidden";
      e.style.visibility = "hidden";
      return true;
    }
    else {
-       console.log("match returned false.");
      e.style.visibility = "visible";
      return false;
    }
