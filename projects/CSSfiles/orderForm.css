@@ -164,21 +164,6 @@
          font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
       }
 
-      /* .summary {
-        transition: 3s;
-
-      }
-
-      .welcome {
-          transition:3s;
-      }
-
-      .welcome:hover {
-        width: 100%;
-        height:300px;
-      } */
-
-
 
       /* from https://hackernoon.com/how-to-create-fancy-revealing-animations-with-these-simple-css-tricks-5b34614ae69a */
       
@@ -196,7 +181,7 @@
       .welcome {
         transform: scaleX(0);
         transform-origin: left;
-        animation: grow-left cubic-bezier(0.59, 0.3, 0.51, 0.85) 4s;
+        animation: grow-left cubic-bezier(0.59, 0.3, 0.51, 0.85) 2s;
         animation-delay: 0.5s;
         animation-fill-mode: forwards;
       }
