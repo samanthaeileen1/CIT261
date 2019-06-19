@@ -183,17 +183,6 @@
       /* from https://hackernoon.com/how-to-create-fancy-revealing-animations-with-these-simple-css-tricks-5b34614ae69a */
       
       /* KEYFRAMES */
-      @keyframes fade-in-right {
-        from {
-          opacity: 0;
-          transform: translateX(-15px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-      
       @keyframes grow-left {
         from {
           transform: scaleX(0);
@@ -204,19 +193,12 @@
       }
 
       /* CLASS SELECTORS */
-      .agent-1, .agent-3 {
-        opacity: 0;
-        animation: fade-in-right ease 0.4s forwards;
-      }
-      
-      .agent-2 {
+      .welcome {
         transform: scaleX(0);
         transform-origin: left;
         animation: grow-left 2s forwards;
         animation-delay: 0.4s;
       }
       
-      .agent-3 {
-        animation-delay: 0.8s;
-      }
+    
       
