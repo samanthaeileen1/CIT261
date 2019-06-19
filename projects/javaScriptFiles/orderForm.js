@@ -1,3 +1,8 @@
+ /************************************************
+  * Adds up all of the prices of what the user
+  * has selected. Also changes the color of 
+  * what they have selected when they selected. 
+  ***********************************************/
 function total() {
     var total = 0;
     
@@ -31,6 +36,10 @@ function total() {
     return total;
  }
  
+  /************************************************
+  * Sets visiblity for all error messages to 
+  * "hidden" so they won't show on page load. 
+  ***********************************************/
  function hideErrors() {
     var e = document.getElementById("phoneError");
     e.style.visibility = "hidden";
@@ -43,7 +52,9 @@ function total() {
  
  }
  
- 
+  /************************************************
+  * Makes sure card number is valid. 
+  ***********************************************/
  function validateCard() {
    var dom = document.getElementById("card");
    var pattern = /^\d{16}/;
@@ -61,6 +72,9 @@ function total() {
  }
  
  
+  /************************************************
+  * Makes sure phone number is valid.
+  ***********************************************/
  function validatePhone() {
    var dom = document.getElementById("phone");
    var pattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
@@ -77,6 +91,9 @@ function total() {
  
  }
  
+  /************************************************
+  * Makes sure card date is valid.
+  ***********************************************/
  function validateDate() {
    var dom     = document.getElementById("cardDate");
    var pattern = /^(\d{2})\/(\d{4})$/;
@@ -96,6 +113,10 @@ function total() {
  
  }
  
+
+  /************************************************
+  * Makes sure all fields are filled out. 
+  ***********************************************/
  function validate() {
    var c = document.getElementById("card");
    var y = document.getElementById("cardDateYear");
