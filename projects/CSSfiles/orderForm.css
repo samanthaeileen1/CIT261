@@ -196,8 +196,9 @@
       .welcome {
         transform: scaleX(0);
         transform-origin: left;
-        animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 2s forwards;
+        animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 4s;
         animation-delay: 0.5s;
+        animation-fill-mode: forwards;
       }
       
     
