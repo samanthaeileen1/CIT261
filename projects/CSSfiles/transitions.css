@@ -112,7 +112,7 @@ p
   height: 300px;
 }
 
-kahkiCircle {
+.kahkiCircle {
   width: 150px;
   height: 80px;
   border: radius 50%;
@@ -120,14 +120,14 @@ kahkiCircle {
   transform: rotate(20deg);
 }
 
-  purpleSquare {
+  .purpleSquare {
   width: 150px;
   height: 150px;
   background-color: purple;
   transform: skewY(20deg);
 }
 
-  pinkRectangle {
+  .pinkRectangle {
   width: 150px;
   height: 80px;
   background-color: pink;
