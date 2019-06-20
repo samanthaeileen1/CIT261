@@ -133,3 +133,9 @@ kahkiCircle {
   background-color: pink;
   transform: scaleY(1.5);
 }
+
+.code 
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: teal;
+}
