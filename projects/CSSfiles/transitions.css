@@ -144,3 +144,10 @@ p
   text-align: center;
   display: inline-block;
 }
+
+div {
+  border-style: dotted;
+  border-color: khaki;
+  color:purple;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;  
+}
