@@ -139,3 +139,8 @@ p
     font-family: 'Courier New', Courier, monospace;
     color: teal;
 }
+
+.wrap {
+  text-align: center;
+  display: inline-block;
+}
