@@ -157,14 +157,14 @@ div {
   height: 80px;
   border-radius: 50%;
   background-color: khaki;
-  transform: rotate(20deg);
+  transform: rotate(360deg);
 }
 
   .purpleSquare3d {
   width: 150px;
   height: 150px;
   background-color: purple;
-  transform: skewY(20deg);
+  transform: 3d skewY(130deg);
 }
 
   .pinkRectangle3d {
