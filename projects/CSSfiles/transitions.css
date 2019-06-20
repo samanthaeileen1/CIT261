@@ -115,7 +115,7 @@ p
 .kahkiCircle {
   width: 150px;
   height: 80px;
-  border: radius 50%;
+  border-radius: 50%;
   background-color: khaki;
   transform: rotate(20deg);
 }
@@ -131,7 +131,7 @@ p
   width: 150px;
   height: 80px;
   background-color: pink;
-  transform: scaleY(1.5);
+  transform: scaleY(3);
 }
 
 .code 
