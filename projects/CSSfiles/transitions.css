@@ -151,3 +151,25 @@ div {
   color:purple;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;  
 }
+
+.kahkiCircle3d {
+  width: 150px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: khaki;
+  transform: rotate(20deg);
+}
+
+  .purpleSquare3d {
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+  transform: skewY(20deg);
+}
+
+  .pinkRectangle3d {
+  width: 150px;
+  height: 80px;
+  background-color: pink;
+  transform: scaleY(1.5);
+}
