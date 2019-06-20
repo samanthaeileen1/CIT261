@@ -111,3 +111,25 @@ p
   width: 300px;
   height: 300px;
 }
+
+kahkiCircle {
+  width: 150px;
+  height: 80px;
+  border: radius 50%;
+  background-color: khaki;
+  transform: rotate(20deg);
+}
+
+  purpleSquare {
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+  transform: skewY(20deg);
+}
+
+  pinkRectangle {
+  width: 150px;
+  height: 80px;
+  background-color: pink;
+  transform: scaleY(1.5);
+}
