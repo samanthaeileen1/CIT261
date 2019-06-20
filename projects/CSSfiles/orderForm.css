@@ -163,11 +163,8 @@
          color:#FF69B4; 
          font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
       }
-
-
-      /* from https://hackernoon.com/how-to-create-fancy-revealing-animations-with-these-simple-css-tricks-5b34614ae69a */
       
-      /* KEYFRAMES */
+      /* KEYFRAME */
       @keyframes grow-left {
         from {
           transform: scaleX(0);

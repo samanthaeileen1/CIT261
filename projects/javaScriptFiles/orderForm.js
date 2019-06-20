@@ -1,3 +1,12 @@
+  /************************************************
+  * Sets focus on the first element of page
+  ***********************************************/
+ function setFocus() {
+ 
+   document.getElementById("fname").focus();
+ 
+ }
+
  /************************************************
   * Adds up all of the prices of what the user
   * has selected. Also changes the color of 
@@ -14,6 +23,7 @@ function total() {
 
 
     if (document.getElementById("florals").checked) {
+      //have to times it by one to cast it to an int
        total += document.getElementById("florals").value *1;
        //CSS style change
        document.getElementById("floralWords").style.color = "#e20641";
@@ -166,12 +176,5 @@ function total() {
      return true;
  }
  
- /************************************************
-  * Sets focus on the first element of page
-  ***********************************************/
- function setFocus() {
- 
-   document.getElementById("fname").focus();
- 
- }
+
 
