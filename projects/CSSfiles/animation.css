@@ -47,6 +47,7 @@ p
     animation-delay: 1s;
     animation-duration: 5s;
     animation-iteration-count:infinite;
+    animation-direction: alternate;
     display:inline-block;
 }
 
