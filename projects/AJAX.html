@@ -27,7 +27,7 @@
       
          function makeRequest(url)
          {
-            url = "http://157.201.194.254/~cs213/" + url;
+            url = "https://samanthaeileen1.github.io/projects/textFiles/" + url;
             //alert("This is the URL: " + url);
             httpRequest = new XMLHttpRequest();
 
@@ -38,7 +38,7 @@
             }
             else
             {
-               httpRequest.onreadystatechange = alertContents;
+               httpRequest.onreadystatechange = formatCities;
                httpRequest.open("GET", url, true);
                httpRequest.send();
             }
@@ -47,7 +47,7 @@
 
  
 
-         function alertContents()
+         function formatCities()
 
          {
             //alert("Ready State = " + httpRequest.readyState);
@@ -90,7 +90,7 @@
 
           function makeRequest2(url)
          {
-            url = "http://157.201.194.254/~cs213/" + url;
+            url = "https://samanthaeileen1.github.io/projects/textFiles/" + url;
             //alert("This is the URL: " + url);
             httpRequest = new XMLHttpRequest();
 
@@ -101,14 +101,14 @@
             }
             else
             {
-               httpRequest.onreadystatechange = processJSON;
+               httpRequest.onreadystatechange = formatStudents;
                httpRequest.open("GET", url, true);
                httpRequest.send();
             }
 
          }
 
-         function processJSON()
+         function formatStudents()
          {
             //alert("Ready State = " + httpRequest.readyState);
             alert("This is the httpRequest: " + httpRequest);
