@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+   <meta charset="utf-8">
+   <meta name="viewpoint" content="width=device-width, intial-scale=1">
+   <link href="CSSFiles/orangeScheme.css" rel="stylesheet">
+
+   <title>JSON PARSING</title>
+
+   <style> 
+     table
+      {
+         width:100%; 
+         color:#930e0e; /*dark red*/
+         border-color: #930e0e; /*dark red*/
+         border-style: solid;
+         font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif; 
+         background-color:gray;
+         margin:5px;   
+      }
+   </style>
+ <script type="text/javascript" language="javascript">
+      
+         var httpRequest = false;
+      
+         function makeRequest(url)
+         {
+            url = "http://157.201.194.254/~cs213/" + url;
+            //alert("This is the URL: " + url);
+            httpRequest = new XMLHttpRequest();
+
+            if (!httpRequest)
+            {
+               alert('ERROR: httpRequest is broken');
+               return false;
+            }
+            else
+            {
+               httpRequest.onreadystatechange = alertContents;
+               httpRequest.open("GET", url, true);
+               httpRequest.send();
+            }
+
+         }
+
+ 
+
+         function alertContents()
+
+         {
+            //alert("Ready State = " + httpRequest.readyState);
+            if (httpRequest.readyState == 4)
+            {
+               // alert("httpRequest.status = " + httpRequest.statusText);
+               // alert("httpRequest.status = " + httpRequest.status);
+               if (httpRequest.status == 200)
+               {
+                 var cities = httpRequest.responseText.split("\n");
+                 var formattedCities = "<table border = '1'><tr><th>City Name and Population</th></tr>\n";
+
+                 // formattedCities = formattedCities + "<tr><td>" 
+                 // cities[0] + "<tr>" + "<th>" + cities [1] + 
+                 // cities[2] + "<tr>" + "<th>" + cities [3] +
+                 // cities[4] + "<tr>" + "<th>" + cities [5] + 
+                 // cities[6] + "<tr>" + "<th>" + cities [7] +
+                 // cities[8] + "<tr>" + "<th>" + cities [9] + "</td></tr>\n";
+
+                 formattedCities = formattedCities + "<tr><td>" +
+                 "<tr><th>" + cities[0] + "</th></tr>\n" +
+                 "<tr><th>" + cities[1] + "</th></tr>\n" +
+                 "<tr><th>" + cities[2] + "</th></tr>\n" +
+                 "<tr><th>" + cities[3] + "</th></tr>\n" +
+                 "<tr><th>" + cities[4] + "</th></tr>\n" +
+                 "<tr><th>" + cities[5] + "</th></tr>\n" +
+                 "<tr><th>" + cities[6] + "</th></tr>\n" +
+                 "<tr><th>" + cities[7] + "</th></tr>\n" +
+                 "<tr><th>" + cities[8] + "</th></tr>\n" +
+                 "<tr><th>" + cities[9] + "</th></tr>\n";
+                 document.getElementById("data").innerHTML = formattedCities;
+               }
+               else
+               {
+                  alert('Status is a failure.');
+                  alert(httpRequest.status);
+               }
+            }
+         }
+
+          function makeRequest2(url)
+         {
+            url = "http://157.201.194.254/~cs213/" + url;
+            //alert("This is the URL: " + url);
+            httpRequest = new XMLHttpRequest();
+
+            if (!httpRequest)
+            {
+               alert('ERROR: httpRequest is broken');
+               return false;
+            }
+            else
+            {
+               httpRequest.onreadystatechange = processJSON;
+               httpRequest.open("GET", url, true);
+               httpRequest.send();
+            }
+
+         }
+
+         function processJSON()
+         {
+            //alert("Ready State = " + httpRequest.readyState);
+            alert("This is the httpRequest: " + httpRequest);
+
+            if (httpRequest.readyState == 4)
+            {
+               //alert("httpRequest.status = " + httpRequest.statusText);
+               
+               if (httpRequest.status == 200)
+               {
+                  //alert("httpRequest was goodly.");
+                  var myObj = JSON.parse(httpRequest.responseText);
+                  var list = "<table border = '1'><tr><th>Name</th><th>Address</th><th>Major</th><th>GPA</th></tr>\n";
+
+                  for(var i = 0; i < myObj.students.length; i++)
+                  {
+                        list = list + "<tr><td>" 
+                     + myObj.students[i].first         + " "
+                     + myObj.students[i].last          + "</td>" + "<td>" 
+                     + myObj.students[i].address.city  + " " 
+                     + myObj.students[i].address.state + " "
+                     + myObj.students[i].address.zip   + "</td>" + "<td>"
+                     + myObj.students[i].major         + "</td>" + "<td>"
+                     + myObj.students[i].gpa           + "</td></tr>\n"; 
+                  }
+
+                  document.getElementById("list").innerHTML = list;
+                   
+
+               }
+               else
+               {
+                  alert('Problem retrieving file. Go rethink life...');
+                  alert(httpRequest.status);
+               }
+            }       
+
+         }
+         
+
+      </script>
+</head>
+
+<body style="text-align: center"> 
+
+<!--FORM-->
+<div class="container" id="form">
+    
+    <!--TITLE-->
+    <h2>10 LARGEST CITIES</h2>
+    <h3>Select a City</h3>
+    <form name="mortgage" action="">
+
+
+   <!--SELECT BOX-->   
+   <select onchange="makeRequest(this.value)">
+     <option value="usa.txt">USA</option>
+     <option value="canada.txt">Canada</option>
+     <option value="mexico.txt">Mexico</option>
+     <option value="russia.txt">Russia</option>
+   </select>
+    <br>
+    <br>
+    <div id="data" style="font-weight: bold">
+       
+
+    </div>
+    </form>
+</div>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+ <!--FORM-->
+<div class="container" id="form2">
+    
+    <!--TITLE-->
+    <h2>ENTER YOUR OWN FILE</h2>
+    <h3>Filename, URL or JSON file</h3>
+
+   <input value="json.txt" type="text" id="file">
+
+   <!--BUTTON-->
+   <input type="button" onclick="makeRequest2(file.value);" value="Display File">
+<br>
+<br>
+
+      <div id="list"></div>
+    
+    </form>
+</div>
+
+</body>
+</html>
