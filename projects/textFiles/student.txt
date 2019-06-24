@@ -18,5 +18,23 @@
       "major" : "Electrical Engineering",
       "gpa"   : "3.0"
     }    
+    { "first" : "Samantha",
+      "last"  : "Neville",
+      "address" : { "city" : "Cameron", "state" : "MO", "zip" : "64429" },
+      "major" : "Software Engineering",
+      "gpa"   : "3.75"
+    },
+    { "first" : "Jared",
+      "last"  : "Neville",
+      "address" : { "city" : "Rigby", "state" : "ID", "zip" : "83442" },
+      "major" : "Human Biology",
+      "gpa"   : "3.9"
+    },
+    { "first" : "Kate",
+      "last"  : "Anderson",
+      "address" : { "city" : "Rexburg", "state" : "ID", "zip" : "83460" },
+      "major" : "Elementery Education",
+      "gpa"   : "3.4"
+    } 
   ]
 }
