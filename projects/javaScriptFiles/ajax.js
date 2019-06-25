@@ -35,13 +35,6 @@ function formatCities()
         var cities = httpRequest.responseText.split("\n");
         var formattedCities = "<table border = '1'><tr><th>City Name and Population</th></tr>\n";
 
-        // formattedCities = formattedCities + "<tr><td>" 
-        // cities[0] + "<tr>" + "<th>" + cities [1] + 
-        // cities[2] + "<tr>" + "<th>" + cities [3] +
-        // cities[4] + "<tr>" + "<th>" + cities [5] + 
-        // cities[6] + "<tr>" + "<th>" + cities [7] +
-        // cities[8] + "<tr>" + "<th>" + cities [9] + "</td></tr>\n";
-
         formattedCities = formattedCities + "<tr><td>" +
         "<tr><th>" + cities[0] + "</th></tr>\n" +
         "<tr><th>" + cities[1] + "</th></tr>\n" +
