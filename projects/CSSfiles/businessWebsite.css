@@ -1,0 +1,130 @@
+/*HOMEPAGE HEADER*/
+h1
+{
+   font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+   color: pink;
+   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+   color:pink;   
+   text-align:center;
+   font-size: 125px;
+   text-shadow: 4px 4px #92655E; /*BROWN*/
+}
+
+/*OTHER PAGE(S) HEADER*/
+h2
+{
+   font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+   color: pink;
+   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+   color:pink;   
+   text-align:center;
+   font-size: 75px;
+   text-shadow: 4px 4px #92655E; /*BROWN*/
+   background-image:url('roses.jpg');
+   height: 125px;
+}
+
+h3
+{
+   font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+   color: pink;
+   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+   color:pink;   
+   text-align:left;
+   font-size: 35px;
+   text-shadow: 2px 2px #92655E; /*BROWN*/
+   margin-left: 10px;
+}
+
+p
+{
+  font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 20px;
+  color:#B3CD61; /*GREEN*/
+  text-align:center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+img
+{
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+
+/*NAVIGATION BAR HOME PAGE*/
+      .hometopnav 
+      {
+       overflow: hidden;
+       background-color: white; /*LILAC*/
+       height: 100px;
+      }
+
+      .hometopnav a 
+      {
+        float: none;
+        margin: 0 auto;
+        color: pink;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 60px;
+        font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+          
+
+      }
+
+      .hometopnav a:hover 
+      {
+        background-color: white;
+        color: pink;
+      }
+
+      .hometopnav a.active 
+      {
+        background-color: pink;
+        color: white;
+      }
+
+
+
+
+
+
+      /*NAVIGATION BAR OTHER PAGE(S)*/
+      .topnav 
+      {
+       overflow: hidden;
+       background-color: white; /*LILAC*/
+       height: 60px;
+       /*background-image:url('roses.jpg');*/
+      }
+
+      .topnav a 
+      {
+        color: pink;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 50px;
+        font-family:Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+        text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
+          
+
+      }
+
+      .topnav a:hover 
+      {
+        background-color: white;
+        color: pink;
+      }
+
+      .topnav a.active 
+      {
+        background-color: pink;
+        color: white;
+      }
