@@ -17,4 +17,6 @@ function setFruit() {
     function removeFruit() {
     //Removal
     window.localStorage.removeItem("favFruit");
+    document.getElementById("displayFruit").innerHTML = "";
+    document.getElementById("picture").innerHTML = "";
     }
