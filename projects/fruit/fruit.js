@@ -101,6 +101,8 @@ function setFruit() {
     window.localStorage.removeItem("favFruit");
     document.getElementById("displayFruit").innerHTML = "";
     document.getElementById("picture").innerHTML = "";
+    document.getElementById("profile").innerHTML = "";
+
     }
 
 
