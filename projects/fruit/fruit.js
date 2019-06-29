@@ -128,7 +128,7 @@ function setFruit() {
             }
 
            var fruitProfile =
-            "<h5>Fruit Profile</h5><br>" +
+            "<h5>Fruit Profile</h5>" +
             "Color(s): "      + this.color  + "<br>" +
             "Thick Peel: "    + this.peel   + "<br>" +
             "Growing Place: " + this.growth + "<br>" + 
