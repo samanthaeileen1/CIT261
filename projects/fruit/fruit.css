@@ -1,11 +1,18 @@
 h1
 {
     color:red;
-    font-size: 50px;
+    font-size: 70px;
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     text-align: center;
 
 
+}
+
+h2 
+{
+    color:orange;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 30px;
 }
 
 a 
@@ -55,4 +62,18 @@ div
 {
     text-align: center;
     
+}
+
+input[type=text], select, textarea 
+{
+  width: 100%; 
+  padding: 12px; 
+  border: 1px dotted orange;
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+  font-family:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+
 }
