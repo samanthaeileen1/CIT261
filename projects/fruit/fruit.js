@@ -9,7 +9,7 @@ function setFruit() {
     // Retrieve
     document.getElementById("displayFruit").innerHTML = window.localStorage.getItem("favFruit");
     var fruit = window.localStorage.getItem("favFruit");
-    if (fruit === "banana") {
+    if (fruit === ("banana" || "Banana")) {
         document.getElementById("picture").innerHTML = "<img src='banana.jpeg' height='480' width='480'>"
     }
     }
