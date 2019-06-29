@@ -16,6 +16,8 @@ function setFruit() {
     if (fruit === "bananas" || fruit === "Bananas") {
         document.getElementById("picture").innerHTML = "<img src='bananas.jpeg' height='480' width='480'>"
     }
+
+    
     }
     
     function removeFruit() {
