@@ -5,7 +5,7 @@ for giving me a start on this. Especially with the crazy math stuff
 
 function makeHeart() {
 
-canvas = document.getElementById("canvas");
+canvas = document.getElementById("heart");
 var context = canvas.getContext("2d");
 canvas.x = 150;
 canvas.y = 150;
