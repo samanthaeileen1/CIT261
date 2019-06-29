@@ -5,7 +5,8 @@
  <title>Local Storage Fruit</title>
  <link rel="stylesheet" type="text/css" href="CSSfiles/pinkPurple.css" />
 </head>
-<body>
+<body class="center">
+<h1>FRUIT PARTY</h1>
 <p>Type in your favorite fruit!</p>
 <br><br>
 <input id="fruit" type="text"></input>
@@ -17,24 +18,6 @@
 <div id="displayFruit"></div>
 <br><br>
 
-<script>
-        function setFruit() {
-        // Store
-        var fruit = document.getElementById("fruit").value;
-        window.localStorage.setItem("favFruit", fruit); //don't forget to put WINDOW!
-        
-        }
-        
-        function getFruit() {
-        // Retrieve
-        document.getElementById("displayFruit").innerHTML = window.localStorage.getItem("favFruit");
-        }
-        
-        function removeFruit() {
-        //Removal
-        window.localStorage.removeItem("favFruit");
-        }
-        
-</script>
+<script src="javaScriptFiles/fruit.js"></script>
 </body>
 </html>
