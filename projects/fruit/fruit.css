@@ -27,6 +27,13 @@ p
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;    
 }
 
+h5
+{
+    color:orange;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-weight: bold; 
+}
+
 div
 {
     color:orange;

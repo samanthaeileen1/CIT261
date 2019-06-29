@@ -103,12 +103,26 @@ function setFruit() {
         this.berry  = berry; 
         
         this.display = function() {
+            if (this.peel === true) {
+                this.peel = "yes";
+            }
+            else {
+                this.peel = "no";
+            }
+
+            if (this.berry === true) {
+                this.berry = "yes";
+            }
+            else {
+                this.berry = "no";
+            }
+
            var fruitProfile =
-            "Fruit Profile<br>" +
+            "<h5>Fruit Profile</h5><br>" +
             "Color(s): "      + this.color  + "<br>" +
             "Thick Peel: "    + this.peel   + "<br>" +
             "Growing Place: " + this.growth + "<br>" + 
-            "Berry:"          + this.berry  + "<br>";
+            "Berry: "         + this.berry  + "<br>";
 
             document.getElementById("profile").innerHTML = fruitProfile;
 
