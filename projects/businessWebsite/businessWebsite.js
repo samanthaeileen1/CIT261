@@ -7,15 +7,15 @@ function makeHeart() {
 
 canvas = document.getElementById("heart");
 var context = canvas.getContext("2d");
-canvas.x = 150;
-canvas.y = 150;
+//canvas.x = 150;
+//canvas.y = 150;
 var w = 200, h = 200;
-context.strokeStyle = "#000000";
-context.strokeWeight = 3;
+context.strokeStyle = "#B3CD61"; /*GREEN*/
+context.strokeWeight = 2;
 context.shadowOffsetX = 4.0;
 context.shadowOffsetY = 4.0;
 context.lineWidth = 10.0;
-context.fillStyle = "#FF0000";
+context.fillStyle = "pink";
 var d = Math.min(w, h);
 var k = 120;
 context.moveTo(k, k + d / 4);
