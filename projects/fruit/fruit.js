@@ -53,12 +53,12 @@ function setFruit() {
         document.getElementById("picture").innerHTML = "<img src='blackberries.jpg' height='480' width='530'>"
     }
 
-    if (fruit === "stawberries" || fruit === "Strawberries") {
-        document.getElementById("picture").innerHTML = "<img src='strawberries.jpg' height='480' width='480'>"
+    if (fruit === "strawberries" || fruit === "Strawberries") {
+        document.getElementById("picture").innerHTML = "<img src='strawberries.jpg' height='480' width='530'>"
     }
 
     if (fruit === "mango" || fruit === "Mango" || fruit === "Mangoes" || fruit === "mangoes" ) {
-        document.getElementById("picture").innerHTML = "<img src='mango.jpg' height='480' width='480'>"
+        document.getElementById("picture").innerHTML = "<img src='mango.jpg' height='480' width='530'>"
     }
 
     if (fruit === "grape" || fruit === "Grape" || fruit === "grapes" || fruit === "Grapes" ) {
