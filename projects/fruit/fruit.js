@@ -18,7 +18,7 @@ function setFruit() {
     }
 
     if (fruit === "orange" || fruit === "Orange" || fruit === "oranges" || fruit === "Oranges" ) {
-        document.getElementById("picture").innerHTML = "<img src='orange.jpg' height='480' width='480'>"
+        document.getElementById("picture").innerHTML = "<img src='orange.jpg' height='480' width='530'>"
     }
 
     if (fruit === "apple" || fruit === "Apple" || fruit === "Apples" || fruit === "apples" ) {
@@ -50,7 +50,7 @@ function setFruit() {
     }
 
     if (fruit === "blackberries" || fruit === "Blackberries") {
-        document.getElementById("picture").innerHTML = "<img src='blackberries.jpg' height='480' width='480'>"
+        document.getElementById("picture").innerHTML = "<img src='blackberries.jpg' height='480' width='530'>"
     }
 
     if (fruit === "stawberries" || fruit === "Strawberries") {
@@ -62,7 +62,7 @@ function setFruit() {
     }
 
     if (fruit === "grape" || fruit === "Grape" || fruit === "grapes" || fruit === "Grapes" ) {
-        document.getElementById("picture").innerHTML = "<img src='grapes.jpg' height='480' width='480'>"
+        document.getElementById("picture").innerHTML = "<img src='grapes.jpg' height='480' width='530'>"
     }
 
 
