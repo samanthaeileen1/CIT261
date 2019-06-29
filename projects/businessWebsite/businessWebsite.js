@@ -2,7 +2,6 @@
  shoutout to http://www.java2s.com/Tutorials/Javascript/Canvas_How_to/Shape/Draw_Heart_shape.htm
 for giving me a start on this. Especially with the crazy math stuff 
 */
-
 function makeHeart() {
 
 canvas = document.getElementById("heart");
