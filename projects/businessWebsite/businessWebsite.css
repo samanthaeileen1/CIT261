@@ -173,3 +173,13 @@ button {
   92% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+
+.fade
+{ 
+  transition: 2.5s;
+  opacity:0.5;
+}
+.fade:hover
+{
+  opacity:1;
+}
