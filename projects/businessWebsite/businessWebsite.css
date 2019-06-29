@@ -176,8 +176,8 @@ button {
 
 .fade
 { 
-  transition: 5s;
-  transition-delay: 2s;
+  transition: 3s;
+  transition-delay: 1.2s;
   opacity:0.0;
 }
 .fade:hover
