@@ -9,8 +9,12 @@ function setFruit() {
     // Retrieve
     document.getElementById("displayFruit").innerHTML = window.localStorage.getItem("favFruit");
     var fruit = window.localStorage.getItem("favFruit");
-    if (fruit === ("banana" || "Banana")) {
+    if (fruit === "banana" || fruit === "Banana") {
         document.getElementById("picture").innerHTML = "<img src='banana.jpeg' height='480' width='480'>"
+    }
+
+    if (fruit === "bananas" || fruit === "Bananas") {
+        document.getElementById("picture").innerHTML = "<img src='bananas.jpeg' height='480' width='480'>"
     }
     }
     
