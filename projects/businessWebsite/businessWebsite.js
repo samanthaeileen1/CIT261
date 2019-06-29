@@ -18,7 +18,7 @@ context.shadowOffsetY = 4.0;
 context.lineWidth = 10.0;
 context.fillStyle = "pink";
 var d = Math.min(width, height);
-var k = 90;
+var k = 60;
 context.moveTo(k, k + d / 4);
 context.quadraticCurveTo(k, k, k + d / 4, k);
 context.quadraticCurveTo(k + d / 2, k, k + d / 2, k + d / 4);
