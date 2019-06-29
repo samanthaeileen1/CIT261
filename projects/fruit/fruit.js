@@ -14,11 +14,11 @@ function setFruit() {
     }
 
     if (fruit === "bananas" || fruit === "Bananas") {
-        document.getElementById("picture").innerHTML = "<img src='bananas.jpeg' height='480' width='480'>"
+        document.getElementById("picture").innerHTML = "<img src='bananas.jpg' height='480' width='480'>"
     }
 
     if (fruit === "orange" || fruit === "Orange" || fruit === "oranges" || fruit === "Oranges" ) {
-        document.getElementById("picture").innerHTML = "<img src='bananas.jpg' height='480' width='480'>"
+        document.getElementById("picture").innerHTML = "<img src='orange.jpg' height='480' width='480'>"
     }
 
     if (fruit === "apple" || fruit === "Apple" || fruit === "Apples" || fruit === "apples" ) {
