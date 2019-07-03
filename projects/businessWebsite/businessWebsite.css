@@ -185,13 +185,13 @@ button {
   opacity:1;
 }
 
-@keyframes spin {
-  from { transform:rotateX(0deg);   }
-  to   { transform:rotateX(360deg); }
+@keyframes fun {
+  from { transform:rotateY(0deg);   }
+  to   { transform:rotateY(360deg); }
 }
 
 .spinnyThing {
-  animation-name: spin;
+  animation-name: fun;
   animation-duration: 5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
