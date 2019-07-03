@@ -32,5 +32,5 @@ context.fill();
 
 function triggerOpacityAnimation() {
     var body = document.getElementById("body");
-    body.className += "fade";
+    body.className += " fade2";
 }
