@@ -34,3 +34,9 @@ function triggerOpacityAnimation() {
     var body = document.getElementById("body");
     body.classList.add("fade2");
 }
+
+function spinSecretButton() {
+    var button = getElementById("button");
+    button.onclick = button.classList.add("spin");
+}
+
