@@ -186,13 +186,13 @@ button {
 }
 
 @keyframes spin {
-  from { transform:rotate(0deg);   }
-  to   { transform:rotate(360deg); }
+  from { transform:rotateX(0deg);   }
+  to   { transform:rotateX(360deg); }
 }
 
 .spinnyThing {
   animation-name: spin;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
 }
