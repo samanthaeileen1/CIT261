@@ -26,3 +26,11 @@ context.quadraticCurveTo(k, k + d / 2, k, k + d / 4);
 context.stroke();
 context.fill();
 }
+
+
+
+
+function triggerOpacityAnimation() {
+    var body = document.getElementById("body");
+    body.className += "fade";
+}
