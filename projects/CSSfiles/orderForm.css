@@ -180,7 +180,7 @@
         transform: scaleX(0);
         transform-origin: left;
         animation: grow-left cubic-bezier(0.59, 0.3, 0.51, 0.85) 2s;
-        animation-delay: 0.5s;
+        animation-delay: 0s;
         animation-fill-mode: forwards;
         opacity:1;
       }
