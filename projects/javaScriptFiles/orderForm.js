@@ -175,6 +175,11 @@ function total() {
     else
      return true;
  }
+
+ function triggerWelcome() {
+    var welcome = document.getElementById("welcome");
+    welcome.classList.add("welcome");
+ }
  
 
 
