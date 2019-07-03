@@ -37,6 +37,6 @@ function triggerOpacityAnimation() {
 
 function spinSecretButton() {
     var button = getElementById("buttonLabel");
-    button.classList.add("spin");
+    button.classList.add("spinnyThing");
 }
 

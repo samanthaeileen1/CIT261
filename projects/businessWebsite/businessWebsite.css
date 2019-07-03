@@ -190,6 +190,8 @@ button {
   to   { rotate:(360deg); }
 }
 
-.spin {
+.spinnyThing {
   animation-name: spin;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
