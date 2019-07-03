@@ -177,7 +177,7 @@ button {
 .fade
 { 
   transition: 3s;
-  transition-delay: 1.2s;
+  transition-delay: 1s;
   opacity:0.0;
 }
 .fade2
