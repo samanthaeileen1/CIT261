@@ -26,8 +26,6 @@ context.quadraticCurveTo(k, k + d / 2, k, k + d / 4);
 context.stroke();
 context.fill();
 
-//little bonus thing for funsies
-spinSecretButton();
 }
 
 
