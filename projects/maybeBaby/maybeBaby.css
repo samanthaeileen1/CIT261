@@ -2,9 +2,11 @@ h1 {
     color:teal;
     font-family: cursive;
     display: inline-block;
+    text-align: center;
 }
 
 .circleButton {
+    display: inline-block;
     border-radius: 50%;
     font-family: cursive;
     color: teal;
