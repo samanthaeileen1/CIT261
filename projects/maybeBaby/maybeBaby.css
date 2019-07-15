@@ -5,8 +5,10 @@ h1 {
 }
 
 .circleButton {
-    border-radius: 75%;
+    border-radius: 50%;
     font-family: cursive;
     color: teal;
     background-color: khaki;
+    width: 30px;
+    height: 30px;
 }
