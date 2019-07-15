@@ -5,6 +5,24 @@ h1 {
     font-size: 70px;
 }
 
+h2 {
+    color:teal;
+    font-family: cursive;
+    font-size:30px;
+}
+
+h3 {
+    color:teal;
+    font-family: cursive;
+    font-size:20px;
+}
+
+p {
+    color:teal;
+    font-family: cursive;
+    font-size:15px;
+}
+
 .circleButton {
     display: inline-block;
     border-radius: 50%;
