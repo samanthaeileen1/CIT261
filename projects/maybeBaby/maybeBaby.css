@@ -52,3 +52,9 @@ h1 {
    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
    font-size: 14px;
 }
+/*END OF GRID*/
+
+
+.center {
+    text-align: center;
+}
