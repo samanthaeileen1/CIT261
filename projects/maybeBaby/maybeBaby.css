@@ -1,6 +1,6 @@
 h1 {
     color:teal;
-    font-family: cursive;
+    font-family: "Brush Script MT", cursive;
     display: inline-block;
     text-align: center;
 }
@@ -13,4 +13,41 @@ h1 {
     background-color: khaki;
     width: 150px;
     height: 150px;
+    border:none;
+}
+
+
+/*GRID*/
+.grid-container 
+{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  padding: 10px;
+}
+.grid-item 
+{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.small-grid
+{
+   display: grid;
+   grid-template-columns:auto auto auto auto;
+   padding: 5px;
+}
+
+.small-grid-item 
+{
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.small-grid-item a
+{
+   font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+   font-size: 14px;
 }
