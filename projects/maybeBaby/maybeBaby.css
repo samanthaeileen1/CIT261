@@ -1,8 +1,8 @@
 h1 {
     color:teal;
     font-family: "Brush Script MT", cursive;
-    display: inline-block;
     text-align: center;
+    font-size: 70px;
 }
 
 .circleButton {
