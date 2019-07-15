@@ -28,7 +28,7 @@ p {
 .circleButton {
     display: inline-block;
     border-radius: 50%;
-    font-family: cursive;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
     color: teal;
     background-color: khaki;
     width: 150px;
