@@ -10,10 +10,10 @@ function getDate() {
 
 
 function setDate() {
-    document.getElementById("div1").value = getDate;
+    document.getElementById("div1").innerHTML = getDate;
 }
 
 function setType() {
-    document.getElementById("div2").value = getType;
+    document.getElementById("div2").innerHTML = getType;
 }
 
