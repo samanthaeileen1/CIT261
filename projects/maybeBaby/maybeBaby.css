@@ -25,6 +25,10 @@ p {
     font-size:15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .circleButton {
     display: inline-block;
     border-radius: 50%;
