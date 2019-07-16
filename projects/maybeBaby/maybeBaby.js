@@ -6,3 +6,11 @@ function setType() {
     document.getElementById("div2").innerHTML = document.getElementById("type").value;
 }
 
+function addAppointment() {
+    document.getElementById()
+}
+
+function addMedication() {
+
+}
+
