@@ -14,6 +14,6 @@ function setDate() {
 }
 
 function setType() {
-    document.getElementById("div2").innerHTML = getType;
+    document.getElementById("div2").innerHTML = document.getElementById("type").value;
 }
 
