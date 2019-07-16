@@ -10,7 +10,7 @@ function getDate() {
 
 
 function setDate() {
-    document.getElementById("div1").innerHTML = getDate;
+    document.getElementById("div1").innerHTML = document.getElementById("date").value;
 }
 
 function setType() {
