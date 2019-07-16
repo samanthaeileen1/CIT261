@@ -30,6 +30,11 @@ a {
     text-decoration: none;
 }
 
+input {
+    color:gray;
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
 .circleButton {
     display: inline-block;
     border-radius: 50%;
