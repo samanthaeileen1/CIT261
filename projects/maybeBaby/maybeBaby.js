@@ -1,6 +1,6 @@
 function getType() {
-    var type = document.getElementById("type").value;
-    return type;
+    var type1 = document.getElementById("type").value;
+    return type1;
 }
 
 function getDate() {
