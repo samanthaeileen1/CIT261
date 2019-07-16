@@ -13,6 +13,8 @@
         <div class="center">
 <h1>MaybeBaby</h1></a>
 <h2>NEW CYCLE</h2>
+
+<!--Radio Buttons-->
 <p>Type:</p><br> 
 <div style="text-align: left;" class="grid-item">
 <input type="radio" class="radio" id="type" name="type" value="Medicated and Timed Intercourse (Not Monitored)">Medicated and Timed Intercourse (Not Monitored)<br>
@@ -22,17 +24,18 @@
 <input type="radio" class="radio"id="type" name="type" value="Frozen Embryo Transfer">Frozen Embryo Transfer<br><br>
 </div>
 
-
+<!--Cycle Start-->
 <p>Cycle Start Date:</p><br> <input type="text" id="date">
-<div class="grid-item"></div>
-<div class="grid-item">
-<button class="circleButton" onclick="addApointment();">Add Appointment</button>
-<button class="circleButton" onclick="addMedication();">Add Medication</button></div><br>
-<button class="circleButton" onclick="">Save Cycle</button>
-   </div>
 
-   <button onclick="setDate(); setType();">set date and type</button>
-   
+<!--Add Buttons-->
+<div class="grid-item"></div>
+<div class="grid-item"><button class="circleButton" onclick="addApointment();">Add Appointment</button></div>
+<div class="grid-item"><button class="circleButton" onclick="addMedication();">Add Medication</button></div>
+
+<!--Save Button-->
+<br>
+<button class="circleButton" onclick="">Save Cycle</button>
+    
    <script src="maybeBaby.js"></script>
 </body>
 
