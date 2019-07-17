@@ -5,12 +5,20 @@ function setDate() {
     // alert("Here is userDate " + userDate);
 }
 
-function setType(radio) {
-    // alert("setType() has been called.");
-    var userType = document.getElementById("type").value;
-    window.localStorage.setItem("type", userType);
-    // alert("Here is type " + userType);
-
+function setType() {
+    
+    var radios = document.getElementsByName('radio');
+    
+    for (var i = 0, length = radios.length; i < length; i++)
+    {
+        if (radios[i].checked)
+        {
+            var userType = radio[i].value;
+            window.localStorage.setItem("type", userType);
+            // only one radio can be logically checked, don't check the rest
+            break;
+        }
+    }
 }
 
 function addAppointment() {
