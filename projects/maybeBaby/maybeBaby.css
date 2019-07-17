@@ -1,3 +1,8 @@
+body {
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+    color:gray;
+}
+
 h1 {
     color:teal;
     font-family: "Brush Script MT", cursive;
