@@ -6,14 +6,15 @@ function setDate() {
 }
 
 function setType() {
-    
+    alert("setType called");
     var radios = document.getElementsByName('radio');
     
     for (var i = 0, length = radios.length; i < length; i++)
     {
         if (radios[i].checked)
         {
-            var userType = radio[i].value;
+            alert("we have a match. Something is checked.");
+            var userType = radios[i].value;
             window.localStorage.setItem("type", userType);
             // only one radio can be logically checked, don't check the rest
             break;
