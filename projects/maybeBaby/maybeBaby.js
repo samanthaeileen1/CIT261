@@ -28,6 +28,7 @@ function getDate() {
 }
 
 function loadCycle() {
+    alert("loadCycle() called.");
     getType();
     getDate();
 }
