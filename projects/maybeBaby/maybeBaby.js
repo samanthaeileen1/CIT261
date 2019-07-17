@@ -6,8 +6,10 @@ function setDate() {
 }
 
 function setType() {
+    alert("setType has been called.");
     var type = document.getElementById("type").value;
     window.localStorage.setItem("type", type);
+    alert("Here is type " + type);
 
 }
 
@@ -19,6 +21,7 @@ function addMedication() {
 
 
 function getType() {
+    alert("getType was called.");
     document.getElementById("displayType").innerHTML = window.localStorage.getItem("type");
 }
 
