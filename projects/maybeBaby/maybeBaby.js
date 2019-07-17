@@ -14,3 +14,6 @@ function addMedication() {
 
 }
 
+function setDate() {
+    
+}

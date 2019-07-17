@@ -138,6 +138,9 @@ input[type=text], select, textarea
 /*CUSTOM RADIO BUTTONS AW YEAH*/
 /* Customize the label (the container) */
 .container {
+    
+    display: inline-block;
+    position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
@@ -170,12 +173,12 @@ input[type=text], select, textarea
   
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
-    background-color: yellow;
+    background-color: khaki;
   }
   
   /* When the radio button is checked, add a blue background */
   .container input:checked ~ .checkmark {
-    background-color: teal;
+    background-color: khaki;
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
