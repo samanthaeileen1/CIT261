@@ -41,7 +41,7 @@ select
 /*INPUT FORM*/
 input[type=text], select, textarea 
 {
-  width: 100%; 
+  width: 50%; 
   padding: 12px; 
   border: 1px dotted teal;
   border-radius: 4px; /* Rounded borders */
