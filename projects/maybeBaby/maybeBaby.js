@@ -1,17 +1,15 @@
 function setDate() {
-    alert("setDate() has been called.");
+    // alert("setDate() has been called.");
     var userDate = document.getElementById("date").value;
     window.localStorage.setItem("date", userDate);
-    alert("Here is userDate " + userDate);
+    // alert("Here is userDate " + userDate);
 }
 
 function setType(radio) {
-    alert("setType() has been called.");
+    // alert("setType() has been called.");
     var userType = document.getElementById("type").value;
-    
     window.localStorage.setItem("type", userType);
-    //alert("Here is radio: " + radio);
-    alert("Here is type " + userType);
+    // alert("Here is type " + userType);
 
 }
 
@@ -23,17 +21,17 @@ function addMedication() {
 
 
 function getType() {
-    alert("getType() was called.");
+    // alert("getType() was called.");
     document.getElementById("displayType").innerHTML = window.localStorage.getItem("type");
 }
 
 function getDate() {
-    alert("getDate() was called.");
+    // alert("getDate() was called.");
     document.getElementById("displayDate").innerHTML = window.localStorage.getItem("date");
 }
 
 function loadCycle() {
-    alert("loadCycle() called.");
+    // alert("loadCycle() called.");
     getType();
     getDate();
 }
@@ -45,6 +43,7 @@ function saveCycle() {
 }
 
 function clearCycle() {
+    alert("clearCycle() called.");
     window.localStorage.removeItem("type");
     window.localStorage.removeItem("date");
 
