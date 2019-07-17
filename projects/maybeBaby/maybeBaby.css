@@ -30,6 +30,29 @@ a {
     text-decoration: none;
 }
 
+/*SELECT*/
+select
+{
+    font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+}
+
+
+
+/*INPUT FORM*/
+input[type=text], select, textarea 
+{
+  width: 100%; 
+  padding: 12px; 
+  border: 1px dotted teal;
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+
+}
+
 .radio {
     color:gray;
     font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
