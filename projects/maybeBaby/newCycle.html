@@ -16,14 +16,23 @@
 
 <!--Radio Buttons-->
 <p>Type:</p><br> 
-<div class="container">
-<div style="text-align: left;" class="grid-item">
-<input type="radio" class="radio" name="type">Medicated and Timed Intercourse (Not Monitored)<br>
-<input type="radio" class="radio" name="type">Medicated and Timed Intercourse (Monitored)<br>
-<input type="radio" class="radio" name="type">Intra-Uterine Insemination<br>
-<input type="radio" class="radio" name="type">In-Vitro Fertilization<br>
-<input type="radio" class="radio" name="type">Frozen Embryo Transfer<br><br>
-</div>
+<div class="grid-item">
+      <label class="container">Medicated and Timed Intercourse (Not Monitored)
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Medicated and Timed Intercourse (Monitored)
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Intra-Uterine Insemination
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Frozen Embryo Transfer
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
 </div>
 <!--Cycle Start-->
 <p>Cycle Start Date:</p><br> <input type="text" id="date">
