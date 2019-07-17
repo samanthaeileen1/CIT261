@@ -1,9 +1,9 @@
 function setDate() {
-    document.getElementById("div1").innerHTML = document.getElementById("date").value;
+    document.getElementById("displayDate").innerHTML = document.getElementById("date").value;
 }
 
 function setType() {
-    document.getElementById("div2").innerHTML = document.getElementById("type").value;
+    document.getElementById("displayType").innerHTML = document.getElementById("type").value;
 }
 
 function addAppointment() {
@@ -15,5 +15,5 @@ function addMedication() {
 }
 
 function setDate() {
-    
+ document.getElementById("date")   
 }
