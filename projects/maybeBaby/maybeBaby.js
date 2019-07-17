@@ -1,6 +1,6 @@
 function setDate() {
-    var date = document.getElementById("date").value;
-    window.localStorage.setItem("date", date);
+    var userDate = document.getElementById("date").value;
+    window.localStorage.setItem("date", userDate);
 }
 
 function setType() {
