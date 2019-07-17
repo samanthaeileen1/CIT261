@@ -7,7 +7,8 @@ function setDate() {
 
 function setType(radio) {
     alert("setType() has been called.");
-    var userType = document.getElementById("radio").value;
+    var userType = document.getElementById("type").value;
+    
     window.localStorage.setItem("type", userType);
     //alert("Here is radio: " + radio);
     alert("Here is type " + userType);
