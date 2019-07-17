@@ -47,5 +47,5 @@ function clearCycle() {
     window.localStorage.removeItem("type");
     window.localStorage.removeItem("date");
 
-    document.getElementById("date").innerHTML = "";
+    document.getElementById("date").value = "";
 }
