@@ -2,11 +2,10 @@ function setDate() {
     alert("setDate() has been called.");
     var userDate = document.getElementById("date").value;
     window.localStorage.setItem("date", userDate);
-    alert("Here is userDate" + userDate);
+    alert("Here is userDate " + userDate);
 }
 
 function setType() {
-    alert("setDate() has been called.");
     var type = document.getElementById("type").value;
     window.localStorage.setItem("type", type);
 
@@ -24,6 +23,7 @@ function getType() {
 }
 
 function getDate() {
+    alert("getDate() was called.");
     document.getElementById("displayDate").innerHTML = window.localStorage.getItem("date");
 }
 
