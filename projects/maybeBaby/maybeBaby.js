@@ -5,11 +5,12 @@ function setDate() {
     alert("Here is userDate " + userDate);
 }
 
-function setType() {
-    alert("setType has been called.");
-    var userType = document.getElementById("type").value;
-    window.localStorage.setItem("type", userType);
-    alert("Here is type " + userType);
+function setType(radio) {
+    alert("setType() has been called.");
+    //var userType = document.getElementById("").value;
+    window.localStorage.setItem("type", radio);
+    alert("Here is radio: " + radio);
+    //alert("Here is type " + userType);
 
 }
 
