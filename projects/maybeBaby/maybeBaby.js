@@ -1,19 +1,30 @@
 function setDate() {
-    document.getElementById("displayDate").innerHTML = document.getElementById("date").value;
+    var date = document.getElementById("date").value;
+    window.localStorage.setItem("date", date);
 }
 
 function setType() {
-    document.getElementById("displayType").innerHTML = document.getElementById("type").value;
+    var type = document.getElementById("type").value;
+    window.localStorage.setItem("type", type);
+
 }
 
 function addAppointment() {
-    document.getElementById()
 }
 
 function addMedication() {
-
 }
 
-function setDate() {
- document.getElementById("date")   
+
+function getType() {
+    document.getElementById("displayType").innerHTML = window.localStorage.getItem("type");
+}
+
+function getDate() {
+    document.getElementById("displayDate").innerHTML = window.localStorage.getItem("date");
+}
+
+function loadCycle() {
+    getType();
+    getDate();
 }
