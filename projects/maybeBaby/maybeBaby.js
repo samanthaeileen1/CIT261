@@ -95,12 +95,14 @@ function loadCycle() {
     // alert("loadCycle() called.");
     getType();
     getDate();
+    getMedDetails();
 }
 
 
 function saveCycle() {
     setDate();
     setType();
+    setMedDetails();
 }
 
 function clearCycle() {
