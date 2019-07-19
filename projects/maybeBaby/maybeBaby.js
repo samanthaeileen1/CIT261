@@ -10,7 +10,7 @@ function setDate() {
 
 function getDate() {
     // alert("getDate() was called.");
-    document.getElementById("displayDate").value = window.localStorage.getItem("date");
+    document.getElementById("displayDate").innerHTML = window.localStorage.getItem("date");
 }
 
 /***************************************************
@@ -35,7 +35,7 @@ function setType() {
 
 function getType() {
     // alert("getType() was called.");
-    document.getElementById("displayType").value = window.localStorage.getItem("type");
+    document.getElementById("displayType").innerHTML = window.localStorage.getItem("type");
 }
 
 /***************************************************
