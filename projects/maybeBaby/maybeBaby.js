@@ -103,11 +103,11 @@ function setAppDetails() {
 
 function getAppDetails() {
     alert("getAppDetails() was called.");
-    document.getElementById("displayappType").innerHTML = window.localStorage.getItem("appType");
-    document.getElementById("displayappDate").innerHTML = window.localStorage.getItem("appDate");
-    document.getElementById("displayappLocation").innerHTML = window.localStorage.getItem("appLocation");
-    document.getElementById("displayappCost").innerHTML = window.localStorage.getItem("appCost");
-    document.getElementById("displayappNotes").innerHTML = window.localStorage.getItem("appNotes");
+    document.getElementById("displayAppType").innerHTML = window.localStorage.getItem("appType");
+    document.getElementById("displayAppDate").innerHTML = window.localStorage.getItem("appDate");
+    document.getElementById("displayAppLocation").innerHTML = window.localStorage.getItem("appLocation");
+    document.getElementById("displayAppCost").innerHTML = window.localStorage.getItem("appCost");
+    document.getElementById("displayAppNotes").innerHTML = window.localStorage.getItem("appNotes");
 
 
 }
@@ -174,11 +174,11 @@ function clearCycle() {
     alert("clearCycle() called.");
 
 
-    document.getElementById("displayappType").innerHTML = "";
-    document.getElementById("displayappDate").innerHTML = "";
-    document.getElementById("displayappLocation").innerHTML = "";
-    document.getElementById("displayappCost").innerHTML = "";
-    document.getElementById("displayappNotes").innerHTML = "";
+    document.getElementById("displayAppType").innerHTML = "";
+    document.getElementById("displayAppDate").innerHTML = "";
+    document.getElementById("displayAppLocation").innerHTML = "";
+    document.getElementById("displayAppCost").innerHTML = "";
+    document.getElementById("displayAppNotes").innerHTML = "";
 
 
     document.getElementById("displayMedName").innerHTML = "";
