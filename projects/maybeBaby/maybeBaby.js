@@ -1,3 +1,6 @@
+/***************************************************
+ * SET & GET DATE
+ * *************************************************/
 function setDate() {
     // alert("setDate() has been called.");
     var userDate = document.getElementById("date").value;
@@ -5,6 +8,14 @@ function setDate() {
     // alert("Here is userDate " + userDate);
 }
 
+function getDate() {
+    // alert("getDate() was called.");
+    document.getElementById("displayDate").innerHTML = window.localStorage.getItem("date");
+}
+
+/***************************************************
+ * SET & GET TYPE
+ * *************************************************/
 function setType() {
     //alert("setType called");
     var radios = document.getElementsByName('radio');
@@ -22,6 +33,28 @@ function setType() {
     }
 }
 
+function getType() {
+    // alert("getType() was called.");
+    document.getElementById("displayType").innerHTML = window.localStorage.getItem("type");
+}
+
+/***************************************************
+ * SET & GET MEDICATION DETAILS
+ * *************************************************/
+function setMedDetails() {
+    alert("setMedDetails() has been called.");
+    var medName = document.getElementById("medName").value;
+    window.localStorage.setItem("medName", medName);
+}
+
+function getMedDetails() {
+    // alert("getDate() was called.");
+    document.getElementById("displayMedName").innerHTML = window.localStorage.getItem("medName");
+}
+
+/***************************************************
+ * ADD BUTTONS
+ * *************************************************/
 function addAppointment() {
     alert("addAppointment being called");
     var addHTML1 = "<h3>YOUR APPOINTMENT</h3><p>Type:</p><input type='text' id='appType'><br>";
@@ -54,16 +87,10 @@ function addMedication() {
 }
 
 
-function getType() {
-    // alert("getType() was called.");
-    document.getElementById("displayType").innerHTML = window.localStorage.getItem("type");
-}
 
-function getDate() {
-    // alert("getDate() was called.");
-    document.getElementById("displayDate").innerHTML = window.localStorage.getItem("date");
-}
-
+/***************************************************
+ * CYCLE GET, SET AND CLEAR
+ * *************************************************/
 function loadCycle() {
     // alert("loadCycle() called.");
     getType();
