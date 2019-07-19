@@ -42,7 +42,7 @@ function getType() {
  * SET & GET MEDICATION DETAILS
  * *************************************************/
 function setMedDetails() {
-    alert("setMedDetails() has been called.");
+    //alert("setMedDetails() has been called.");
     
     var medName = document.getElementById("medName").value;
     window.localStorage.setItem("medName", medName);
@@ -68,14 +68,14 @@ function setMedDetails() {
 }
 
 function getMedDetails() {
-    alert("getMedDetails() was called.");
-    document.getElementById("displayMedName").value = window.localStorage.getItem("medName");
-    document.getElementById("displayMedDate").value = window.localStorage.getItem("medDate");
-    document.getElementById("displayMedDosage").value = window.localStorage.getItem("medDosage");
-    document.getElementById("displayMedNumDays").value = window.localStorage.getItem("medNumDays");
-    document.getElementById("displayMedTime").value = window.localStorage.getItem("medTime");
-    document.getElementById("displayMedCost").value = window.localStorage.getItem("medCost");
-    document.getElementById("displayMedNotes").value = window.localStorage.getItem("medNotes");
+    //alert("getMedDetails() was called.");
+    document.getElementById("displayMedName").innerHTML = window.localStorage.getItem("medName");
+    document.getElementById("displayMedDate").innerHTML = window.localStorage.getItem("medDate");
+    document.getElementById("displayMedDosage").innerHTML = window.localStorage.getItem("medDosage");
+    document.getElementById("displayMedNumDays").innerHTML = window.localStorage.getItem("medNumDays");
+    document.getElementById("displayMedTime").innerHTML = window.localStorage.getItem("medTime");
+    document.getElementById("displayMedCost").innerHTML = window.localStorage.getItem("medCost");
+    document.getElementById("displayMedNotes").innerHTML = window.localStorage.getItem("medNotes");
 
 }
 
