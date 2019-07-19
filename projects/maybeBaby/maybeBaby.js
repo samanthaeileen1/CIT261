@@ -73,7 +73,7 @@ function getMedDetails() {
     document.getElementById("displayMedDate").innerHTML = window.localStorage.getItem("medDate");
     document.getElementById("displayMedDosage").innerHTML = window.localStorage.getItem("medDosage");
     document.getElementById("displayMedNumDays").innerHTML = window.localStorage.getItem("medNumDays");
-    document.getElementById("displayMedNotes").innerHTML = window.localStorage.getItem("medNotes");
+    document.getElementById("displayMedTime").innerHTML = window.localStorage.getItem("medTime");
     document.getElementById("displayMedCost").innerHTML = window.localStorage.getItem("medCost");
     document.getElementById("displayMedNotes").innerHTML = window.localStorage.getItem("medNotes");
 
