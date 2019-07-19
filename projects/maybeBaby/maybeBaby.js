@@ -23,6 +23,7 @@ function setType() {
 }
 
 function addAppointment() {
+    alert("addAppointment being called");
     var addHTML1 = "<h2>YOUR CYCLE</h2><p>Type:</p><input type='text' id='appType'><br>";
     var addHTML2 = "<p>Date:</p><input type='text' id='appDate'><br>";
     var addHTML3 = "<p>Location:</p><input type='text' id='appLocation'><br>";
@@ -30,7 +31,9 @@ function addAppointment() {
     var addHTML5 = "<p>Notes:</p><input type='text' id='appNotes'><br>";
     
     var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5;
+    alert("This is var total " + total);
     document.getElementById("addAppointment").innerHTML = total;
+
 }
 
 function addMedication() {
