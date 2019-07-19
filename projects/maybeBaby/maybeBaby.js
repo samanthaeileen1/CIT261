@@ -77,8 +77,37 @@ function getMedDetails() {
     document.getElementById("displayMedCost").innerHTML = window.localStorage.getItem("medCost");
     document.getElementById("displayMedNotes").innerHTML = window.localStorage.getItem("medNotes");
 
+}
 
+/***************************************************
+ * SET & GET APPOINTMENT DETAILS
+ * *************************************************/
+function setAppDetails() {
+    alert("setAppDetails() has been called.");
+    
+    var appType = document.getElementById("appType").value;
+    window.localStorage.setItem("appType", appType);
+    
+    var appDate = document.getElementById("appDate").value;
+    window.localStorage.setItem("appDate", appDate);
 
+    var appLocation = document.getElementById("appLocation").value;
+    window.localStorage.setItem("appLocation", appLocation)
+    
+    var appCost = document.getElementById("appCost").value;
+    window.localStorage.setItem("appCost", appCost);
+
+    var appNotes = document.getElementById("appNotes").value;
+    window.localStorage.setItem("appNotes", appNotes);
+}
+
+function getAppDetails() {
+    // alert("getDate() was called.");
+    document.getElementById("displayappType").innerHTML = window.localStorage.getItem("appType");
+    document.getElementById("displayappDate").innerHTML = window.localStorage.getItem("appDate");
+    document.getElementById("displayappLocation").innerHTML = window.localStorage.getItem("appLocation");
+    document.getElementById("displayappCost").innerHTML = window.localStorage.getItem("appCost");
+    document.getElementById("displayappNotes").innerHTML = window.localStorage.getItem("appNotes");
 
 
 }
@@ -127,6 +156,7 @@ function loadCycle() {
     getType();
     getDate();
     getMedDetails();
+    getAppDetails();
 }
 
 
@@ -134,6 +164,7 @@ function saveCycle() {
     setDate();
     setType();
     setMedDetails();
+    setAppDetails();
 }
 
 function clearCycle() {
