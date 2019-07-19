@@ -102,7 +102,7 @@ function setAppDetails() {
 }
 
 function getAppDetails() {
-    alert("getAppDetails() was called.");
+    //alert("getAppDetails() was called.");
     document.getElementById("displayAppType").innerHTML = window.localStorage.getItem("appType");
     document.getElementById("displayAppDate").innerHTML = window.localStorage.getItem("appDate");
     document.getElementById("displayAppLocation").innerHTML = window.localStorage.getItem("appLocation");
@@ -142,7 +142,7 @@ function addMedication() {
 
 
     var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5 + addHTML6 + addHTML7 + addHTML8;
-    alert("This is var total " + total);
+    //alert("This is var total " + total);
     document.getElementById("addMedicationDiv").innerHTML = total;
 }
 
@@ -171,7 +171,7 @@ function saveCycle() {
 }
 
 function clearCycle() {
-    alert("clearCycle() called.");
+   // alert("clearCycle() called.");
 
 
     document.getElementById("displayAppType").value = "";
