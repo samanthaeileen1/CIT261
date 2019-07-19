@@ -163,8 +163,9 @@ function loadCycle() {
 function saveCycle() {
     setDate();
     setType();
-    setMedDetails();
     setAppDetails();
+    setMedDetails();
+    
 }
 
 function clearCycle() {
