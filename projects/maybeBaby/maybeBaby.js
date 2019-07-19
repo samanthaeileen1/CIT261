@@ -32,7 +32,7 @@ function addAppointment() {
     
     var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5;
     alert("This is var total " + total);
-    document.getElementById("addAppointment").innerHTML = total;
+    document.getElementById("addAppointmentDiv").innerHTML = total;
 
 }
 
