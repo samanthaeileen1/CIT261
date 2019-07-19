@@ -10,7 +10,7 @@ function setDate() {
 
 function getDate() {
     // alert("getDate() was called.");
-    document.getElementById("displayDate").innerHTML = window.localStorage.getItem("date");
+    document.getElementById("displayDate").value = window.localStorage.getItem("date");
 }
 
 /***************************************************
@@ -35,7 +35,7 @@ function setType() {
 
 function getType() {
     // alert("getType() was called.");
-    document.getElementById("displayType").innerHTML = window.localStorage.getItem("type");
+    document.getElementById("displayType").value = window.localStorage.getItem("type");
 }
 
 /***************************************************
@@ -69,13 +69,13 @@ function setMedDetails() {
 
 function getMedDetails() {
     alert("getMedDetails() was called.");
-    document.getElementById("displayMedName").innerHTML = window.localStorage.getItem("medName");
-    document.getElementById("displayMedDate").innerHTML = window.localStorage.getItem("medDate");
-    document.getElementById("displayMedDosage").innerHTML = window.localStorage.getItem("medDosage");
-    document.getElementById("displayMedNumDays").innerHTML = window.localStorage.getItem("medNumDays");
-    document.getElementById("displayMedTime").innerHTML = window.localStorage.getItem("medTime");
-    document.getElementById("displayMedCost").innerHTML = window.localStorage.getItem("medCost");
-    document.getElementById("displayMedNotes").innerHTML = window.localStorage.getItem("medNotes");
+    document.getElementById("displayMedName").value = window.localStorage.getItem("medName");
+    document.getElementById("displayMedDate").value = window.localStorage.getItem("medDate");
+    document.getElementById("displayMedDosage").value = window.localStorage.getItem("medDosage");
+    document.getElementById("displayMedNumDays").value = window.localStorage.getItem("medNumDays");
+    document.getElementById("displayMedTime").value = window.localStorage.getItem("medTime");
+    document.getElementById("displayMedCost").value = window.localStorage.getItem("medCost");
+    document.getElementById("displayMedNotes").value = window.localStorage.getItem("medNotes");
 
 }
 
@@ -103,11 +103,11 @@ function setAppDetails() {
 
 function getAppDetails() {
     alert("getAppDetails() was called.");
-    document.getElementById("displayAppType").innerHTML = window.localStorage.getItem("appType");
-    document.getElementById("displayAppDate").innerHTML = window.localStorage.getItem("appDate");
-    document.getElementById("displayAppLocation").innerHTML = window.localStorage.getItem("appLocation");
-    document.getElementById("displayAppCost").innerHTML = window.localStorage.getItem("appCost");
-    document.getElementById("displayAppNotes").innerHTML = window.localStorage.getItem("appNotes");
+    document.getElementById("displayAppType").value = window.localStorage.getItem("appType");
+    document.getElementById("displayAppDate").value = window.localStorage.getItem("appDate");
+    document.getElementById("displayAppLocation").value = window.localStorage.getItem("appLocation");
+    document.getElementById("displayAppCost").value = window.localStorage.getItem("appCost");
+    document.getElementById("displayAppNotes").value = window.localStorage.getItem("appNotes");
 
 
 }
@@ -125,7 +125,7 @@ function addAppointment() {
     
     var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5;
     alert("This is var total " + total);
-    document.getElementById("addAppointmentDiv").innerHTML = total;
+    document.getElementById("addAppointmentDiv").value = total;
 
 }
 
@@ -143,7 +143,7 @@ function addMedication() {
 
     var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5 + addHTML6 + addHTML7 + addHTML8;
     alert("This is var total " + total);
-    document.getElementById("addMedicationDiv").innerHTML = total;
+    document.getElementById("addMedicationDiv").value = total;
 }
 
 
@@ -174,20 +174,22 @@ function clearCycle() {
     alert("clearCycle() called.");
 
 
-    document.getElementById("displayAppType").innerHTML = " ";
-    document.getElementById("displayAppDate").innerHTML = " ";
-    document.getElementById("displayAppLocation").innerHTML = " ";
-    document.getElementById("displayAppCost").innerHTML = " ";
-    document.getElementById("displayAppNotes").innerHTML = " ";
+    document.getElementById("displayAppType").value = "";
+    document.getElementById("displayAppDate").value = "";
+    document.getElementById("displayAppLocation").value = "";
+    document.getElementById("displayAppCost").value = "";
+    document.getElementById("displayAppNotes").value = "";
 
 
-    document.getElementById("displayMedName").innerHTML = " ";
-    document.getElementById("displayMedDate").innerHTML = " ";
-    document.getElementById("displayMedDosage").innerHTML = " ";
-    document.getElementById("displayMedNumDays").innerHTML =" ";
-    document.getElementById("displayMedTime").innerHTML = " ";
-    document.getElementById("displayMedCost").innerHTML = " ";
-    document.getElementById("displayMedNotes").innerHTML = " ";
+    document.getElementById("displayMedName").value = "";
+    document.getElementById("displayMedDate").value = "";
+    document.getElementById("displayMedDosage").value = "";
+    document.getElementById("displayMedNumDays").value ="";
+    document.getElementById("displayMedTime").value = "";
+    document.getElementById("displayMedCost").value = "";
+    document.getElementById("displayMedNotes").value = "";
+    document.getElementById("date").value = "";
+    document.getElementById("type").checked = false;
 
 
     window.localStorage.removeItem("type");
@@ -214,5 +216,4 @@ function clearCycle() {
 
 
 
-    document.getElementById("date").value = "";
 }
