@@ -194,22 +194,22 @@ function clearCycle() {
     // document.getElementById("type").checked = false;
 
 
-    window.localStorage.removeItem("type");
-    window.localStorage.removeItem("date");
+    // window.localStorage.removeItem("type");
+    // window.localStorage.removeItem("date");
 
-    window.localStorage.removeItem("appType");
-    window.localStorage.removeItem("appDate");
-    window.localStorage.removeItem("appLocation");
-    window.localStorage.removeItem("appCost");
-    window.localStorage.removeItem("appNotes");
+    // window.localStorage.removeItem("appType");
+    // window.localStorage.removeItem("appDate");
+    // window.localStorage.removeItem("appLocation");
+    // window.localStorage.removeItem("appCost");
+    // window.localStorage.removeItem("appNotes");
 
-    window.localStorage.removeItem("medName");
-    window.localStorage.removeItem("medDate");
-    window.localStorage.removeItem("medDosage");
-    window.localStorage.removeItem("medNumDays");
-    window.localStorage.removeItem("medTime");
-    window.localStorage.removeItem("medCost");
-    window.localStorage.removeItem("medNotes");
+    // window.localStorage.removeItem("medName");
+    // window.localStorage.removeItem("medDate");
+    // window.localStorage.removeItem("medDosage");
+    // window.localStorage.removeItem("medNumDays");
+    // window.localStorage.removeItem("medTime");
+    // window.localStorage.removeItem("medCost");
+    // window.localStorage.removeItem("medNotes");
 
 }
 
