@@ -174,20 +174,20 @@ function clearCycle() {
     alert("clearCycle() called.");
 
 
-    document.getElementById("displayAppType").innerHTML = "";
-    document.getElementById("displayAppDate").innerHTML = "";
-    document.getElementById("displayAppLocation").innerHTML = "";
-    document.getElementById("displayAppCost").innerHTML = "";
-    document.getElementById("displayAppNotes").innerHTML = "";
+    document.getElementById("displayAppType").innerHTML = " ";
+    document.getElementById("displayAppDate").innerHTML = " ";
+    document.getElementById("displayAppLocation").innerHTML = " ";
+    document.getElementById("displayAppCost").innerHTML = " ";
+    document.getElementById("displayAppNotes").innerHTML = " ";
 
 
-    document.getElementById("displayMedName").innerHTML = "";
-    document.getElementById("displayMedDate").innerHTML = "";
-    document.getElementById("displayMedDosage").innerHTML = "";
-    document.getElementById("displayMedNumDays").innerHTML ="";
-    document.getElementById("displayMedTime").innerHTML = "";
-    document.getElementById("displayMedCost").innerHTML = "";
-    document.getElementById("displayMedNotes").innerHTML = "";
+    document.getElementById("displayMedName").innerHTML = " ";
+    document.getElementById("displayMedDate").innerHTML = " ";
+    document.getElementById("displayMedDosage").innerHTML = " ";
+    document.getElementById("displayMedNumDays").innerHTML =" ";
+    document.getElementById("displayMedTime").innerHTML = " ";
+    document.getElementById("displayMedCost").innerHTML = " ";
+    document.getElementById("displayMedNotes").innerHTML = " ";
 
 
     window.localStorage.removeItem("type");
