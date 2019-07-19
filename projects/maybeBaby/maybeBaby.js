@@ -154,9 +154,11 @@ function addMedication() {
 function loadCycle() {
     // alert("loadCycle() called.");
     getType();
-    getDate();
+    getDate();  
+    computeCost();
     getMedDetails();
     getAppDetails();
+  
    
     
 }
@@ -223,8 +225,10 @@ function clearCycle() {
 
  function computeCost() {
     var total = 0;
-    total += document.getElementById("medCost").value *1;
-    total += document.getElementById("appCost").value *1;
-
+    var appCost = window.localStorage.getItem("appCost");
+    var medCost = window.localStorage.getItem("medCost");
+    total += appCost *1;
+    total += medCost *1;
+    //total += document.getElementById("appCost").value *1;
     document.getElementById("displayTotalCost").innerHTML = total;
  }
