@@ -23,8 +23,7 @@ function setType() {
 }
 
 function addAppointment() {
-    var addHTML = 
-    "<h2>YOUR CYCLE</h2><p>Type:</p><input type='text' id='appType'><br> <p>Date:</p><input type='text' id='appDate'><br><p>Location:</p><input type='text' id='appLocation'><br><p>Cost:</p><input type='text' id='appCost'><br><p>Notes:</p><input type='text' id='appNotes'><br>"
+    var addHTML = "<h2>YOUR CYCLE</h2><p>Type:</p><input type='text' id='appType'><br> <p>Date:</p><input type='text' id='appDate'><br><p>Location:</p><input type='text' id='appLocation'><br><p>Cost:</p><input type='text' id='appCost'><br><p>Notes:</p><input type='text' id='appNotes'><br>";
     
     document.getElementById("addAppointment").innerHTML = addHTML;
 }
