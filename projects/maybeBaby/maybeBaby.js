@@ -174,11 +174,11 @@ function clearCycle() {
    // alert("clearCycle() called.");
 
 
-    document.getElementById("displayAppType").value = "";
-    document.getElementById("displayAppDate").value = "";
-    document.getElementById("displayAppLocation").value = "";
-    document.getElementById("displayAppCost").value = "";
-    document.getElementById("displayAppNotes").value = "";
+    // document.getElementById("displayAppType").value = "";
+    // document.getElementById("displayAppDate").value = "";
+    // document.getElementById("displayAppLocation").value = "";
+    // document.getElementById("displayAppCost").value = "";
+    // document.getElementById("displayAppNotes").value = "";
 
 
     // document.getElementById("displayMedName").value = "";
@@ -188,8 +188,8 @@ function clearCycle() {
     // document.getElementById("displayMedTime").value = "";
     // document.getElementById("displayMedCost").value = "";
     // document.getElementById("displayMedNotes").value = "";
-    document.getElementById("date").value = "";
-    document.getElementById("type").checked = false;
+     document.getElementById("date").value = "";
+    // document.getElementById("type").checked = false;
 
 
     window.localStorage.removeItem("type");
