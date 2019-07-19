@@ -190,7 +190,7 @@ function clearCycle() {
     // document.getElementById("displayMedTime").value = "";
     // document.getElementById("displayMedCost").value = "";
     // document.getElementById("displayMedNotes").value = "";
-     document.getElementById("date").value = "";
+    // document.getElementById("date").value = "";
     // document.getElementById("type").checked = false;
 
 
