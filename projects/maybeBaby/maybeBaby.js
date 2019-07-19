@@ -23,9 +23,14 @@ function setType() {
 }
 
 function addAppointment() {
-    var addHTML = "<h2>YOUR CYCLE</h2><p>Type:</p><input type='text' id='appType'><br> <p>Date:</p><input type='text' id='appDate'><br><p>Location:</p><input type='text' id='appLocation'><br><p>Cost:</p><input type='text' id='appCost'><br><p>Notes:</p><input type='text' id='appNotes'><br>";
+    var addHTML1 = "<h2>YOUR CYCLE</h2><p>Type:</p><input type='text' id='appType'><br>";
+    var addHTML2 = "<p>Date:</p><input type='text' id='appDate'><br>";
+    var addHTML3 = "<p>Location:</p><input type='text' id='appLocation'><br>";
+    var addHTML4 = "<p>Cost:</p><input type='text' id='appCost'><br>";
+    var addHTML5 = "<p>Notes:</p><input type='text' id='appNotes'><br>";
     
-    document.getElementById("addAppointment").innerHTML = addHTML;
+    var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5;
+    document.getElementById("addAppointment").innerHTML = total;
 }
 
 function addMedication() {
