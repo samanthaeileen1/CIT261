@@ -83,7 +83,7 @@ function getMedDetails() {
  * SET & GET APPOINTMENT DETAILS
  * *************************************************/
 function setAppDetails() {
-    alert("setAppDetails() has been called.");
+    //alert("setAppDetails() has been called.");
     
     var appType = document.getElementById("appType").value;
     window.localStorage.setItem("appType", appType);
@@ -103,11 +103,11 @@ function setAppDetails() {
 
 function getAppDetails() {
     alert("getAppDetails() was called.");
-    document.getElementById("displayAppType").value = window.localStorage.getItem("appType");
-    document.getElementById("displayAppDate").value = window.localStorage.getItem("appDate");
-    document.getElementById("displayAppLocation").value = window.localStorage.getItem("appLocation");
-    document.getElementById("displayAppCost").value = window.localStorage.getItem("appCost");
-    document.getElementById("displayAppNotes").value = window.localStorage.getItem("appNotes");
+    document.getElementById("displayAppType").innerHTML = window.localStorage.getItem("appType");
+    document.getElementById("displayAppDate").innerHTML = window.localStorage.getItem("appDate");
+    document.getElementById("displayAppLocation").innerHTML = window.localStorage.getItem("appLocation");
+    document.getElementById("displayAppCost").innerHTML = window.localStorage.getItem("appCost");
+    document.getElementById("displayAppNotes").innerHTML = window.localStorage.getItem("appNotes");
 
 
 }
@@ -130,7 +130,7 @@ function addAppointment() {
 }
 
 function addMedication() {
-    alert("addMedication being called");
+    //alert("addMedication being called");
     var addHTML1 = "<h3>YOUR MEDICATION</h3><br>";
     var addHTML2 = "<p>Medication Name:</p><input type='text' id='medName'><br>";
     var addHTML3 = "<p>Day of Cycle Started:</p><input type='text' id='medDate'><br>";
