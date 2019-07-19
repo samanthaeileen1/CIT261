@@ -209,11 +209,9 @@ function clearCycle() {
     window.localStorage.removeItem("medCost");
     window.localStorage.removeItem("medNotes");
 
+}
 
-
-
-
-
-
-
+function clearCycle2 {
+    alert("Are you sure you want to create a new cycle? This will delete your current cycle.");
+    clearCycle();
 }
