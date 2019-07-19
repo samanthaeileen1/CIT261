@@ -215,3 +215,16 @@ function clearCycle() {
 //     alert("Are you sure you want to create a new cycle? This will delete your current cycle.");
 //     clearCycle();
 // }
+
+
+/***************************************************
+ * COMPUTE AND DISPLAY TOTAL CYCLE COST 
+ * *************************************************/
+
+ function computeCost() {
+    var total = 0;
+    total += document.getElementById("medCost").value *1;
+    total += document.getElementById("appCost").value *1;
+
+    document.getElementById("displayTotalCost").innerHTML = total;
+ }
