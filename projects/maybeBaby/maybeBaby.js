@@ -24,7 +24,7 @@ function setType() {
 
 function addAppointment() {
     alert("addAppointment being called");
-    var addHTML1 = "<h2>YOUR CYCLE</h2><p>Type:</p><input type='text' id='appType'><br>";
+    var addHTML1 = "<h2>YOUR APPOINTMENT</h2><p>Type:</p><input type='text' id='appType'><br>";
     var addHTML2 = "<p>Date:</p><input type='text' id='appDate'><br>";
     var addHTML3 = "<p>Location:</p><input type='text' id='appLocation'><br>";
     var addHTML4 = "<p>Cost:</p><input type='text' id='appCost'><br>";
@@ -37,6 +37,19 @@ function addAppointment() {
 }
 
 function addMedication() {
+    alert("addMedication being called");
+    var addHTML1 = "<h2>YOUR MEDICATION</h2><p>Type:</p><input type='text' id='appType'><br>";
+    var addHTML2 = "<p>Medication Name:</p><input type='text' id='medName'><br>";
+    var addHTML3 = "<p>Day of Cycle Started:</p><input type='text' id='medDate'><br>";
+    var addHTML4 = "<p>Dosage:</p><input type='text' id='medDosage'><br>";
+    var addHTML5 = "<p>Number of Days Taken:</p><input type='text' id='medNumDays'><br>";
+    var addHTML6 = "<p>Time of Day Taken:</p><input type='text' id='medTime'><br>";
+    var addHTML7 = "<p>Total Cost:</p><input type='text' id='medCost'><br>";
+
+
+    var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5 + addHTML6 + addHTML7;
+    alert("This is var total " + total);
+    document.getElementById("addMedicationDiv").innerHTML = total;
 }
 
 
