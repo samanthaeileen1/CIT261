@@ -45,9 +45,10 @@ function addMedication() {
     var addHTML5 = "<p>Number of Days Taken:</p><input type='text' id='medNumDays'><br>";
     var addHTML6 = "<p>Time of Day Taken:</p><input type='text' id='medTime'><br>";
     var addHTML7 = "<p>Total Cost:</p><input type='text' id='medCost'><br>";
+    var addHTML8 = "<p>Notes:</p><input type='text' id='medNotes'><br>";
 
 
-    var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5 + addHTML6 + addHTML7;
+    var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5 + addHTML6 + addHTML7 + addHTML8;
     alert("This is var total " + total);
     document.getElementById("addMedicationDiv").innerHTML = total;
 }
