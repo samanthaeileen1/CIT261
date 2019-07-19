@@ -211,7 +211,7 @@ function clearCycle() {
 
 }
 
-function clearCycle2() {
-    alert("Are you sure you want to create a new cycle? This will delete your current cycle.");
-    clearCycle();
-}
+// function clearCycle2() {
+//     alert("Are you sure you want to create a new cycle? This will delete your current cycle.");
+//     clearCycle();
+// }
