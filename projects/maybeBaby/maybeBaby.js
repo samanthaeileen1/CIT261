@@ -24,7 +24,7 @@ function setType() {
 
 function addAppointment() {
     alert("addAppointment being called");
-    var addHTML1 = "<h2>YOUR APPOINTMENT</h2><p>Type:</p><input type='text' id='appType'><br>";
+    var addHTML1 = "<h3>YOUR APPOINTMENT</h3><p>Type:</p><input type='text' id='appType'><br>";
     var addHTML2 = "<p>Date:</p><input type='text' id='appDate'><br>";
     var addHTML3 = "<p>Location:</p><input type='text' id='appLocation'><br>";
     var addHTML4 = "<p>Cost:</p><input type='text' id='appCost'><br>";
@@ -38,7 +38,7 @@ function addAppointment() {
 
 function addMedication() {
     alert("addMedication being called");
-    var addHTML1 = "<h2>YOUR MEDICATION</h2><p>Type:</p><input type='text' id='appType'><br>";
+    var addHTML1 = "<h3>YOUR MEDICATION</h3><p>Type:</p><input type='text' id='appType'><br>";
     var addHTML2 = "<p>Medication Name:</p><input type='text' id='medName'><br>";
     var addHTML3 = "<p>Day of Cycle Started:</p><input type='text' id='medDate'><br>";
     var addHTML4 = "<p>Dosage:</p><input type='text' id='medDosage'><br>";
