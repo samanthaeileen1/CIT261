@@ -180,7 +180,6 @@ function clearCycle() {
     window.localStorage.removeItem("appLocation");
     window.localStorage.removeItem("appCost");
     window.localStorage.removeItem("appNotes");
-    window.localStorage.removeItem("appType");
 
     window.localStorage.removeItem("medName");
     window.localStorage.removeItem("medDate");
