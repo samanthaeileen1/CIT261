@@ -143,7 +143,7 @@ function addMedication() {
 
     var total = addHTML1 + addHTML2 + addHTML3 + addHTML4 + addHTML5 + addHTML6 + addHTML7 + addHTML8;
     alert("This is var total " + total);
-    document.getElementById("addMedicationDiv").value = total;
+    document.getElementById("addMedicationDiv").innerHTML = total;
 }
 
 
