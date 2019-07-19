@@ -68,7 +68,7 @@ function setMedDetails() {
 }
 
 function getMedDetails() {
-    // alert("getDate() was called.");
+    alert("getMedDetails() was called.");
     document.getElementById("displayMedName").innerHTML = window.localStorage.getItem("medName");
     document.getElementById("displayMedDate").innerHTML = window.localStorage.getItem("medDate");
     document.getElementById("displayMedDosage").innerHTML = window.localStorage.getItem("medDosage");
@@ -102,7 +102,7 @@ function setAppDetails() {
 }
 
 function getAppDetails() {
-    // alert("getDate() was called.");
+    alert("getAppDetails() was called.");
     document.getElementById("displayappType").innerHTML = window.localStorage.getItem("appType");
     document.getElementById("displayappDate").innerHTML = window.localStorage.getItem("appDate");
     document.getElementById("displayappLocation").innerHTML = window.localStorage.getItem("appLocation");
@@ -155,8 +155,9 @@ function loadCycle() {
     // alert("loadCycle() called.");
     getType();
     getDate();
-    getMedDetails();
     getAppDetails();
+    getMedDetails();
+    
 }
 
 
