@@ -155,8 +155,9 @@ function loadCycle() {
     // alert("loadCycle() called.");
     getType();
     getDate();
-    getAppDetails();
     getMedDetails();
+    getAppDetails();
+   
     
 }
 
