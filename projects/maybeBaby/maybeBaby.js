@@ -175,5 +175,41 @@ function clearCycle() {
     window.localStorage.removeItem("type");
     window.localStorage.removeItem("date");
 
+    window.localStorage.removeItem("appType");
+    window.localStorage.removeItem("appDate");
+    window.localStorage.removeItem("appLocation");
+    window.localStorage.removeItem("appCost");
+    window.localStorage.removeItem("appNotes");
+    window.localStorage.removeItem("appType");
+
+    window.localStorage.removeItem("medName");
+    window.localStorage.removeItem("medDate");
+    window.localStorage.removeItem("medDosage");
+    window.localStorage.removeItem("medNumDays");
+    window.localStorage.removeItem("medTime");
+    window.localStorage.removeItem("medCost");
+    window.localStorage.removeItem("medNotes");
+
+
+    document.getElementById("displayappType").innerHTML = "";
+    document.getElementById("displayappDate").innerHTML = "";
+    document.getElementById("displayappLocation").innerHTML = "";
+    document.getElementById("displayappCost").innerHTML = "";
+    document.getElementById("displayappNotes").innerHTML = "";
+
+
+    document.getElementById("displayMedName").innerHTML = "";
+    document.getElementById("displayMedDate").innerHTML = "";
+    document.getElementById("displayMedDosage").innerHTML = "";
+    document.getElementById("displayMedNumDays").innerHTML ="";
+    document.getElementById("displayMedTime").innerHTML = "";
+    document.getElementById("displayMedCost").innerHTML = "";
+    document.getElementById("displayMedNotes").innerHTML = "";
+
+
+
+
+
+
     document.getElementById("date").value = "";
 }
