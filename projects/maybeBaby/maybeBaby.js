@@ -2,14 +2,14 @@
  * SET & GET DATE
  * *************************************************/
 function setDate() {
-    // alert("setDate() has been called.");
+    alert("setDate() has been called.");
     var userDate = document.getElementById("date").value;
     window.localStorage.setItem("date", userDate);
-    // alert("Here is userDate " + userDate);
+    alert("Here is userDate " + userDate);
 }
 
 function getDate() {
-    // alert("getDate() was called.");
+    alert("getDate() was called.");
     document.getElementById("displayDate").innerHTML = window.localStorage.getItem("date");
 }
 
@@ -17,7 +17,7 @@ function getDate() {
  * SET & GET TYPE
  * *************************************************/
 function setType() {
-    //alert("setType called");
+    alert("setType called");
     var radios = document.getElementsByName('radio');
     
     for (var i = 0, length = radios.length; i < length; i++)
@@ -34,7 +34,7 @@ function setType() {
 }
 
 function getType() {
-    // alert("getType() was called.");
+     alert("getType() was called.");
     document.getElementById("displayType").innerHTML = window.localStorage.getItem("type");
 }
 
@@ -42,7 +42,7 @@ function getType() {
  * SET & GET MEDICATION DETAILS
  * *************************************************/
 function setMedDetails() {
-    //alert("setMedDetails() has been called.");
+    alert("setMedDetails() has been called.");
     
     var medName = document.getElementById("medName").value;
     window.localStorage.setItem("medName", medName);
@@ -68,7 +68,7 @@ function setMedDetails() {
 }
 
 function getMedDetails() {
-    //alert("getMedDetails() was called.");
+    alert("getMedDetails() was called.");
     document.getElementById("displayMedName").innerHTML = window.localStorage.getItem("medName");
     document.getElementById("displayMedDate").innerHTML = window.localStorage.getItem("medDate");
     document.getElementById("displayMedDosage").innerHTML = window.localStorage.getItem("medDosage");
@@ -83,7 +83,7 @@ function getMedDetails() {
  * SET & GET APPOINTMENT DETAILS
  * *************************************************/
 function setAppDetails() {
-    //alert("setAppDetails() has been called.");
+    alert("setAppDetails() has been called.");
     
     var appType = document.getElementById("appType").value;
     window.localStorage.setItem("appType", appType);
@@ -102,7 +102,7 @@ function setAppDetails() {
 }
 
 function getAppDetails() {
-    //alert("getAppDetails() was called.");
+    alert("getAppDetails() was called.");
     document.getElementById("displayAppType").innerHTML = window.localStorage.getItem("appType");
     document.getElementById("displayAppDate").innerHTML = window.localStorage.getItem("appDate");
     document.getElementById("displayAppLocation").innerHTML = window.localStorage.getItem("appLocation");
