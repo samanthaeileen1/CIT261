@@ -172,6 +172,24 @@ function saveCycle() {
 
 function clearCycle() {
     alert("clearCycle() called.");
+
+
+    document.getElementById("displayappType").innerHTML = "";
+    document.getElementById("displayappDate").innerHTML = "";
+    document.getElementById("displayappLocation").innerHTML = "";
+    document.getElementById("displayappCost").innerHTML = "";
+    document.getElementById("displayappNotes").innerHTML = "";
+
+
+    document.getElementById("displayMedName").innerHTML = "";
+    document.getElementById("displayMedDate").innerHTML = "";
+    document.getElementById("displayMedDosage").innerHTML = "";
+    document.getElementById("displayMedNumDays").innerHTML ="";
+    document.getElementById("displayMedTime").innerHTML = "";
+    document.getElementById("displayMedCost").innerHTML = "";
+    document.getElementById("displayMedNotes").innerHTML = "";
+
+
     window.localStorage.removeItem("type");
     window.localStorage.removeItem("date");
 
@@ -190,20 +208,6 @@ function clearCycle() {
     window.localStorage.removeItem("medNotes");
 
 
-    document.getElementById("displayappType").innerHTML = "";
-    document.getElementById("displayappDate").innerHTML = "";
-    document.getElementById("displayappLocation").innerHTML = "";
-    document.getElementById("displayappCost").innerHTML = "";
-    document.getElementById("displayappNotes").innerHTML = "";
-
-
-    document.getElementById("displayMedName").innerHTML = "";
-    document.getElementById("displayMedDate").innerHTML = "";
-    document.getElementById("displayMedDosage").innerHTML = "";
-    document.getElementById("displayMedNumDays").innerHTML ="";
-    document.getElementById("displayMedTime").innerHTML = "";
-    document.getElementById("displayMedCost").innerHTML = "";
-    document.getElementById("displayMedNotes").innerHTML = "";
 
 
 
