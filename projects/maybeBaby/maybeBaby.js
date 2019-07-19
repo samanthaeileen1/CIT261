@@ -43,13 +43,44 @@ function getType() {
  * *************************************************/
 function setMedDetails() {
     alert("setMedDetails() has been called.");
+    
     var medName = document.getElementById("medName").value;
     window.localStorage.setItem("medName", medName);
+    
+    var medDate = document.getElementById("medDate").value;
+    window.localStorage.setItem("medDate", medDate);
+
+    var medDosage = document.getElementById("medDosage").value;
+    window.localStorage.setItem("medDosage", medDosage);
+
+    var medNumDays = document.getElementById("medNumDays").value;
+    window.localStorage.setItem("medNumDays", medNumDays);
+
+    var medTime = document.getElementById("medTime").value;
+    window.localStorage.setItem("medTime", medTime);
+
+    var medCost = document.getElementById("medCost").value;
+    window.localStorage.setItem("medCost", medCost);
+
+    var medNotes = document.getElementById("medNotes").value;
+    window.localStorage.setItem("medNotes", medNotes);
+
 }
 
 function getMedDetails() {
     // alert("getDate() was called.");
     document.getElementById("displayMedName").innerHTML = window.localStorage.getItem("medName");
+    document.getElementById("displayMedDate").innerHTML = window.localStorage.getItem("medDate");
+    document.getElementById("displayMedDosage").innerHTML = window.localStorage.getItem("medDosage");
+    document.getElementById("displayMedNumDays").innerHTML = window.localStorage.getItem("medNumDays");
+    document.getElementById("displayMedNotes").innerHTML = window.localStorage.getItem("medNotes");
+    document.getElementById("displayMedCost").innerHTML = window.localStorage.getItem("medCost");
+    document.getElementById("displayMedNotes").innerHTML = window.localStorage.getItem("medNotes");
+
+
+
+
+
 }
 
 /***************************************************
@@ -71,7 +102,7 @@ function addAppointment() {
 
 function addMedication() {
     alert("addMedication being called");
-    var addHTML1 = "<h3>YOUR MEDICATION</h3><p>Type:</p><input type='text' id='appType'><br>";
+    var addHTML1 = "<h3>YOUR MEDICATION</h3><br>";
     var addHTML2 = "<p>Medication Name:</p><input type='text' id='medName'><br>";
     var addHTML3 = "<p>Day of Cycle Started:</p><input type='text' id='medDate'><br>";
     var addHTML4 = "<p>Dosage:</p><input type='text' id='medDosage'><br>";
