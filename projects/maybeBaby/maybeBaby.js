@@ -181,13 +181,13 @@ function clearCycle() {
     document.getElementById("displayAppNotes").value = "";
 
 
-    document.getElementById("displayMedName").value = "";
-    document.getElementById("displayMedDate").value = "";
-    document.getElementById("displayMedDosage").value = "";
-    document.getElementById("displayMedNumDays").value ="";
-    document.getElementById("displayMedTime").value = "";
-    document.getElementById("displayMedCost").value = "";
-    document.getElementById("displayMedNotes").value = "";
+    // document.getElementById("displayMedName").value = "";
+    // document.getElementById("displayMedDate").value = "";
+    // document.getElementById("displayMedDosage").value = "";
+    // document.getElementById("displayMedNumDays").value ="";
+    // document.getElementById("displayMedTime").value = "";
+    // document.getElementById("displayMedCost").value = "";
+    // document.getElementById("displayMedNotes").value = "";
     document.getElementById("date").value = "";
     document.getElementById("type").checked = false;
 
