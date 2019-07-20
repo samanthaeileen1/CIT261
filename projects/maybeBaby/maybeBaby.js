@@ -292,8 +292,8 @@ function changeColor() {
     saveButton.classList.add("clickedButton");
 }
 
-function triggerWelcome() {
-    var welcome = document.getElementById("welcome");
-    welcome.classList.add("welcome");
+function triggerMaybeBaby() {
+    var welcome = document.getElementById("maybeBaby");
+    welcome.classList.add("maybeBaby");
  }
  
