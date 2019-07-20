@@ -281,3 +281,13 @@ function displayMedication() {
     document.getElementById("displayMedCost").innerHTML = myMed.medCost;
     document.getElementById("displayMedNotes").innerHTML = myMed.medNotes;
 }
+
+
+
+/***************************************************
+ * CSS ANIMATION, TRANSFORMS, TRANSITIONS STUFF
+ * *************************************************/
+function changeColor() {
+    var saveButton = document.getElementById("saveButton");
+    saveButton.classList.add("clickedButton");
+}
