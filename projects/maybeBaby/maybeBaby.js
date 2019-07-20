@@ -86,8 +86,8 @@ function clearCycle() {
  function computeCost() {
     alert("computeCost() called");
     var total = 0;
-    var appCost = window.localStorage.getItem("appCost");
-    var medCost = window.localStorage.getItem("medCost");
+    var appCost = document.getElementById("appCost").value;
+    var medCost = document.getElementById("medCost").value;
     total += appCost *1;
     total += medCost *1;
     //total += document.getElementById("appCost").value *1;
