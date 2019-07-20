@@ -291,3 +291,9 @@ function changeColor() {
     var saveButton = document.getElementById("saveButton");
     saveButton.classList.add("clickedButton");
 }
+
+function triggerWelcome() {
+    var welcome = document.getElementById("welcome");
+    welcome.classList.add("welcome");
+ }
+ 
