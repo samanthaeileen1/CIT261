@@ -42,6 +42,7 @@ function loadCycle() {
 
     displayCycle();
     displayAppointment();
+    displayMedication();
     
 }
 
