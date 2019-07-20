@@ -158,6 +158,8 @@ function loadCycle() {
     //computeCost();
     // getMedDetails();
     // getAppDetails();
+
+    displayCycle();
   
    
     
@@ -247,6 +249,9 @@ function clearCycle() {
      this.type = type;
      this.date = date;
      this.cost = cost;
+     this.displayCycle = function() {
+             
+    }
  }
 
  function Appointment(appType, appDate, appLocation, appCost, appNotes) {
@@ -351,4 +356,20 @@ function createMedication() {
     alert("Here is the JSONmed: " + JSONmed);
     //save the med (now a string) to local storage
     window.localStorage.setItem("medication", JSONmed);
+}
+
+function displayCycle() {
+    alert("displayCycle() called");
+        
+    //get the JSON cycle out of the local storage
+     var JSONcycle = window.localStorage.getItem("cycle");
+     alert("JSONcycle is " + JSONcycle);
+    
+    //turn the string into a CYCLE object
+    var myCycle = JSON.parse(JSONcycle);
+    alert("This is myCycle.type: " + myCycle.type);
+
+document.getElementById("displayType").innerHTML = myCycle.type;
+document.getElementById("displayDate").innerHTML = myCycle.date;
+document.getElementById("displayCost").innerHTML = myCycle.cost; 
 }
