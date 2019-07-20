@@ -241,7 +241,7 @@ function displayAppointment() {
 
     //turn the string into a APPOINTMENT object
     var myAppt = JSON.parse(JSONappt);
-    alert("This is myAppt.type" + myAppt.type);
+    alert("This is myAppt.type " + myAppt.type);
 
     //display the appointment info in the HTML page
     document.getElementById("displayAppType").innerHTML = myAppt.appType;
@@ -249,4 +249,25 @@ function displayAppointment() {
     document.getElementById("displayAppLocation").innerHTML = myAppt.appLocation;
     document.getElementById("displayAppCost").innerHTML = myAppt.appCost;
     document.getElementById("displayAppNotes").innerHTML = myAppt.appNotes;
+}
+
+function displayMedication() {
+    alert("displayMedication() called");
+
+    //get the JSON medication out of local storage
+    var JSONmed = window.localStorage.getItem("medication");
+    alert("JSONmed is " + JSONmed);
+
+    //turn the string into a MEDICATION object
+    var myMed = JSON.parse(JSONmed);
+    alert("This is myMed.name " + myMed.name);
+
+    //display the medication infor in the HTML
+    document.getElementById("displayMedName").innerHTML = myMed.medName;
+    document.getElementById("displayMedDate").innerHTML = myMed.medDate;
+    document.getElementById("displayMedDosage").innerHTML = myMed.medDosage;
+    document.getElementById("displayMedNumDays").innerHTML = myMed.medNumDays;
+    document.getElementById("displayMedTime").innerHTML = myMed.medTime;
+    document.getElementById("displayMedCost").innerHTML = myMed.medCost;
+    document.getElementById("displayMedNotes").innerHTML = myMed.medNotes;
 }
