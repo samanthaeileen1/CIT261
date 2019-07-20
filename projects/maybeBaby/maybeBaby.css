@@ -93,6 +93,7 @@ input[type=text], select, textarea
     height: 100px;
     border:none;
     font-weight: bold;
+    transition-property: .59s;
 }
 
 .tryIt:hover {
