@@ -75,12 +75,12 @@ input[type=text], select, textarea
     height: 150px;
     border:none;
     font-weight: bold;
-    transition: 1.2s;
+    transition: 1s;
 }
 
 .circleButton:hover {
-      width:215px;
-      height:215px;
+      width:190px;
+      height:190px;
 }
 .tryIt {
     display: inline-block;
