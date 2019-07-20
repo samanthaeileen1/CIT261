@@ -86,8 +86,8 @@ function clearCycle() {
  function computeCost() {
     alert("computeCost() called");
     var total = 0;
-    var appCost = document.getElementById("appCost").value;
-    var medCost = document.getElementById("medCost").value;
+    var appCost = document.getElementById("appCost").value *1;
+    var medCost = document.getElementById("medCost").value *1;
     total += appCost *1;
     total += medCost *1;
     //total += document.getElementById("appCost").value *1;
@@ -228,7 +228,7 @@ function displayCycle() {
     //display the cycle information in the HTML
     document.getElementById("displayType").innerHTML = myCycle.type;
     document.getElementById("displayDate").innerHTML = myCycle.date;
-    document.getElementById("displayCost").innerHTML = myCycle.cost; 
+    document.getElementById("displayTotalCost").innerHTML = myCycle.cost; 
 }
 
 
