@@ -153,11 +153,11 @@ function addMedication() {
  * *************************************************/
 function loadCycle() {
     // alert("loadCycle() called.");
-    getType();
-    getDate();  
+    // getType();
+    // getDate();  
     //computeCost();
-    getMedDetails();
-    getAppDetails();
+    // getMedDetails();
+    // getAppDetails();
   
    
     
@@ -348,7 +348,7 @@ function createMedication() {
 
     //turn the MEDICATION into a JSON string
     var JSONmed = JSON.stringify(myMed);
-
+    alert("Here is the JSONmed: " + JSONmed);
     //save the med (now a string) to local storage
     window.localStorage.setItem("medication", JSONmed);
 }
