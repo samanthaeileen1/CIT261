@@ -160,6 +160,7 @@ function loadCycle() {
     // getAppDetails();
 
     displayCycle();
+    displayAppointment();
   
    
     
