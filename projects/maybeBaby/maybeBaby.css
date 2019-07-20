@@ -75,8 +75,13 @@ input[type=text], select, textarea
     height: 150px;
     border:none;
     font-weight: bold;
+    transition: 1.2s;
 }
 
+.circleButton:hover {
+      width:215px;
+      height:215px;
+}
 .tryIt {
     display: inline-block;
     border-radius: 50%;
