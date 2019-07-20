@@ -252,9 +252,6 @@ function clearCycle() {
      this.type = type;
      this.date = date;
      this.cost = cost;
-     this.displayCycle = function() {
-             
-    }
  }
 
  function Appointment(appType, appDate, appLocation, appCost, appNotes) {
@@ -263,9 +260,7 @@ function clearCycle() {
      this.appLocation = appLocation;
      this.appCost = appCost;
      this.appNotes = appNotes;
-     this.appDisplay = function() {
-         return "put some HTML in here to make it display on the currentCycle page.";
-     }
+     
  }
 
  function Medication(medName, medDate, medDosage, medNumDays, medTime, medCost, medNotes) {
@@ -276,9 +271,7 @@ function clearCycle() {
      this.medTime = medTime;
      this.medCost = medCost;
      this.medNotes = medNotes;
-     this.medDisplay = function() {
-        return "put some HTML in here to make it display on the currentCycle page.";
-     }
+    
  }
 
 
@@ -305,6 +298,7 @@ function createCycle(){
 
     var userDate = document.getElementById("date").value;
     var cost = computeCost();
+    alert("this is the cost " +  cost);
 
     alert("Just a test to see if .value is working to get the user input. Here is userType, userDate: " + userType + ", " + userDate);
     //create new cycle object using our constructor and user input
