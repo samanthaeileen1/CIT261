@@ -38,7 +38,7 @@ function addMedication() {
  * CYCLE GET, SET AND CLEAR
  * *************************************************/
 function loadCycle() {
-    alert("loadCycle() called.");
+    //alert("loadCycle() called.");
 
     displayCycle();
     displayAppointment();
@@ -47,7 +47,7 @@ function loadCycle() {
 }
 
 function saveCycle() {
-    alert("saveCycle() called");
+    //alert("saveCycle() called");
 
     createCycle();
     createAppointment();
@@ -55,7 +55,7 @@ function saveCycle() {
 }
 
 function clearCycle() {
-   alert("clearCycle() called.");
+   //alert("clearCycle() called.");
 
    window.localStorage.removeItem("cycle");
    window.localStorage.removeItem("appointment");
@@ -85,14 +85,13 @@ function clearCycle() {
  * COMPUTE TOTAL CYCLE COST 
  * *************************************************/
  function computeCost() {
-    alert("computeCost() called");
+    ///alert("computeCost() called");
     var total = 0;
-    var appCost = document.getElementById("appCost").value *1;
-    var medCost = document.getElementById("medCost").value *1;
+    var appCost = document.getElementById("appCost").value;
+    var medCost = document.getElementById("medCost").value;
     total += appCost *1;
     total += medCost *1;
-    //total += document.getElementById("appCost").value *1;
-    alert("This is the total: " + total);
+    ///alert("This is the total: " + total);
     return total;
  }
 
@@ -131,7 +130,7 @@ function clearCycle() {
  * CREATE FUNCTIONS
  * *************************************************/
 function createCycle(){
-    alert("createCycle() called");
+    //alert("createCycle() called");
 
     var radios = document.getElementsByName('radio');
     
@@ -150,15 +149,17 @@ function createCycle(){
 
     var userDate = document.getElementById("date").value;
     var cost = computeCost();
-    alert("this is the cost " +  cost);
-
-    alert("Just a test to see if .value is working to get the user input. Here is userType, userDate: " + userType + ", " + userDate);
+    
+    //alert("this is the cost " +  cost);
+    //alert("Just a test to see if .value is working to get the user input. Here is userType, userDate: " + userType + ", " + userDate);
+    
     //create new cycle object using our constructor and user input
     var myCycle = new Cycle(userType, userDate, cost);
 
     //turn the CYCLE into a JSON string so we can store it in local storage
     var JSONcycle = JSON.stringify(myCycle);
-    alert("This is JSONcycle: " + JSONcycle);
+    
+    //alert("This is JSONcycle: " + JSONcycle);
 
     //save the cycle (now a string) into long term local storage
     window.localStorage.setItem("cycle", JSONcycle);
@@ -166,7 +167,7 @@ function createCycle(){
 
 function createAppointment() {
 
-    alert("createAppointment() called");
+    //alert("createAppointment() called");
 
     //get our variables from the user's input
     var appType = document.getElementById("appType").value;
@@ -180,14 +181,16 @@ function createAppointment() {
 
     //turn the APPOINTMENT into a JSON string
     var JSONappt = JSON.stringify(myAppt);
-    alert("Here is the JSONappt: " + JSONappt);
+    
+    //alert("Here is the JSONappt: " + JSONappt);
+    
     //save the appointment (now a string) to local storage
     window.localStorage.setItem("appointment", JSONappt);
 }
 
 
 function createMedication() {
-    alert("createMedication() called");
+    //alert("createMedication() called");
 
     //get our variables from user's input
     var medName = document.getElementById("medName").value;
@@ -203,7 +206,9 @@ function createMedication() {
 
     //turn the MEDICATION into a JSON string
     var JSONmed = JSON.stringify(myMed);
-    alert("Here is the JSONmed: " + JSONmed);
+    
+    //alert("Here is the JSONmed: " + JSONmed);
+    
     //save the med (now a string) to local storage
     window.localStorage.setItem("medication", JSONmed);
 }
@@ -214,16 +219,16 @@ function createMedication() {
  * DISPLAY FUNCTIONS
  * *************************************************/
 function displayCycle() {
-    alert("displayCycle() called");
+    //alert("displayCycle() called");
         
     //get the JSON cycle out of the local storage
      var JSONcycle = window.localStorage.getItem("cycle");
      alert("JSONcycle is " + JSONcycle);
     
     //turn the string into a CYCLE object
-    //???????????double check syntax
     var myCycle = JSON.parse(JSONcycle);
-    alert("This is myCycle.type: " + myCycle.type);
+    
+    //alert("This is myCycle.type: " + myCycle.type);
 
 
     //display the cycle information in the HTML
@@ -234,15 +239,17 @@ function displayCycle() {
 
 
 function displayAppointment() {
-    alert("displayAppointment() called");
+    //alert("displayAppointment() called");
 
     //get the JSON appointment out of local storage
     var JSONappt = window.localStorage.getItem("appointment");
-    alert("JSONappt is " + JSONappt);
+    
+    //alert("JSONappt is " + JSONappt);
 
     //turn the string into a APPOINTMENT object
     var myAppt = JSON.parse(JSONappt);
-    alert("This is myAppt.type " + myAppt.type);
+    
+    //alert("This is myAppt.type " + myAppt.type);
 
     //display the appointment info in the HTML page
     document.getElementById("displayAppType").innerHTML = myAppt.appType;
@@ -253,15 +260,17 @@ function displayAppointment() {
 }
 
 function displayMedication() {
-    alert("displayMedication() called");
+    //alert("displayMedication() called");
 
     //get the JSON medication out of local storage
     var JSONmed = window.localStorage.getItem("medication");
-    alert("JSONmed is " + JSONmed);
+    
+    //alert("JSONmed is " + JSONmed);
 
     //turn the string into a MEDICATION object
     var myMed = JSON.parse(JSONmed);
-    alert("This is myMed.name " + myMed.name);
+    
+    //alert("This is myMed.name " + myMed.name);
 
     //display the medication infor in the HTML
     document.getElementById("displayMedName").innerHTML = myMed.medName;
