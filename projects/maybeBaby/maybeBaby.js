@@ -165,11 +165,13 @@ function loadCycle() {
 
 
 function saveCycle() {
-    setDate();
-    setType();
-    setAppDetails();
-    setMedDetails();
-    
+    // setDate();
+    // setType();
+    // setAppDetails();
+    // setMedDetails();
+    createCycle();
+    createAppointment();
+    createMedication();
 }
 
 function clearCycle() {
@@ -232,3 +234,121 @@ function clearCycle() {
     //total += document.getElementById("appCost").value *1;
     document.getElementById("displayTotalCost").innerHTML = total;
  }
+
+
+
+
+
+/***************************************************
+ * CYCLE, APPOINTMENT AND MEDICATION CLASSES
+ * *************************************************/
+
+ function Cycle(type, date, cost) {
+     this.type = type;
+     this.date = date;
+     this.cost = cost;
+ }
+
+ function Appointment(appType, appDate, appLocation, appCost, appNotes) {
+     this.appType = appType;
+     this.appDate = appDate;
+     this.appLocation = appLocation;
+     this.appCost = appCost;
+     this.appNotes = appNotes;
+     this.appDisplay = function() {
+         return "put some HTML in here to make it display on the currentCycle page.";
+     }
+ }
+
+ function Medication(medName, medDate, medDosage, medNumDays, medTime, medCost, medNotes) {
+     this.medName = medName;
+     this.medDate = medDate;
+     this.medDosage = medDosage;
+     this.medNumDays = medNumDays;
+     this.medTime = medTime;
+     this.medCost = medCost;
+     this.medNotes = medNotes;
+     this.medDisplay = function() {
+        return "put some HTML in here to make it display on the currentCycle page.";
+     }
+ }
+
+
+ /***************************************************
+ * CYCLE, APPOINTMENT AND MEDICATION CLASSES
+ * *************************************************/
+function createCycle(){
+    alert("createCycle() called");
+    var radios = document.getElementsByName('radio');
+    
+    //loop to check what radio button is checked
+    for (var i = 0, length = radios.length; i < length; i++)
+    {
+        if (radios[i].checked)
+        {
+            //alert("we have a match. Something is checked.");
+            var userType = radios[i].value;
+            //save this radio button value because it is what the user checked
+            window.localStorage.setItem("type", userType);
+            // only one radio can be logically checked, don't check the rest
+            break;
+        }
+    }
+
+    var userDate = document.getElementById("date").value;
+    var cost = 0;
+
+    alert("Just a test to see if .value is working to get the user input. Here is userType, userDate: " + userType + ", " + userDate);
+    //create new cycle object using our constructor and user input
+    var myCycle = new Cycle(userType, userDate, cost);
+
+    //turn the CYCLE into a JSON string so we can store it in local storage
+    var JSONcycle = JSON.stringify(myCycle);
+    alert("This is JSONcycle: " + JSONcycle);
+
+    //save the cycle (now a string) into long term local storage
+    window.localStorage.setItem("cycle", JSONcycle);
+}
+
+function createAppointment() {
+
+    alert("createAppointment() called");
+    //get our variables from the user's input
+    var appType = document.getElementById("appType").value;
+    var appDate = document.getElementById("appDate").value;
+    var appLocation = document.getElementById("appLocation").value;
+    var appCost = document.getElementById("appCost").value;
+    var appNotes = document.getElementById("appNotes").value;
+    
+    //create the appt with our constructor
+    var myAppt = new Appointment(appType, appDate, appLocation, appCost, appNotes);
+
+    //turn the APPOINTMENT into a JSON string
+    var JSONappt = JSON.stringify(myAppt);
+    alert("Here is the JSONappt: " + JSONappt);
+    //save the appointment (now a string) to local storage
+    window.localStorage.setItem("appointment", JSONappt);
+}
+
+
+function createMedication() {
+    alert("createMedication() called");
+
+    //get our variables from user's input
+    var medName = document.getElementById("medName").value;
+    var medDate = document.getElementById("medDate").value;
+    var medDosage = document.getElementById("medDosage").value;
+    var medNumDays = document.getElementById("medNumDays").value;
+    var medTime = document.getElementById("medTime").value;
+    var medCost = document.getElementById("medCost").value;
+    var medNotes = document.getElementById("medNotes").value;
+
+    //create the med from the constructor and user input
+    var myMed = new Medication(medName, medDate, medDosage, medNumDays, medTime, medCost, medNotes);
+
+    //turn the MEDICATION into a JSON string
+    var JSONmed = JSON.stringify(myMed);
+
+    //save the med (now a string) to local storage
+    window.localStorage.setItem("medication", JSONmed);
+}
