@@ -90,6 +90,10 @@ input[type=text], select, textarea
     font-weight: bold;
 }
 
+.tryIt:hover {
+  background-color:gray;
+}
+
 
 
 /*GRID*/

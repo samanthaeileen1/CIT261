@@ -223,7 +223,7 @@ function displayCycle() {
         
     //get the JSON cycle out of the local storage
      var JSONcycle = window.localStorage.getItem("cycle");
-     alert("JSONcycle is " + JSONcycle);
+     //alert("JSONcycle is " + JSONcycle);
     
     //turn the string into a CYCLE object
     var myCycle = JSON.parse(JSONcycle);
