@@ -369,7 +369,29 @@ function displayCycle() {
     var myCycle = JSON.parse(JSONcycle);
     alert("This is myCycle.type: " + myCycle.type);
 
-document.getElementById("displayType").innerHTML = myCycle.type;
-document.getElementById("displayDate").innerHTML = myCycle.date;
-document.getElementById("displayCost").innerHTML = myCycle.cost; 
+
+    //display the cycle information in the HTML
+    document.getElementById("displayType").innerHTML = myCycle.type;
+    document.getElementById("displayDate").innerHTML = myCycle.date;
+    document.getElementById("displayCost").innerHTML = myCycle.cost; 
+}
+
+
+function displayAppointment() {
+    alert("displayAppointment() called");
+
+    //get the JSON appointment out of local storage
+    var JSONappt = window.localStorage.getItem("appointment");
+    alert("JSONappt is " + JSONappt);
+
+    //turn the string into a APPOINTMENT object
+    var myAppt = JSON.parse(JSONappt);
+    alert("This is myAppt.type" + myAppt.type);
+
+    //display the appointment info in the HTML page
+    document.getElementById("displayAppType").innerHTML = myAppt.appType;
+    document.getElementById("displayAppDate").innerHTML = myAppt.appDate;
+    document.getElementById("displayAppLocation").innerHTML = myAppt.appLocation;
+    document.getElementById("displayAppCost").innerHTML = myAppt.appCost;
+    document.getElementById("displayAppNotes").innerHTML = myAppt.appNotes;
 }
