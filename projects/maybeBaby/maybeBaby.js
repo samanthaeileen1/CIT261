@@ -229,13 +229,15 @@ function clearCycle() {
  * *************************************************/
 
  function computeCost() {
+    alert("computeCost() called");
     var total = 0;
     var appCost = window.localStorage.getItem("appCost");
     var medCost = window.localStorage.getItem("medCost");
     total += appCost *1;
     total += medCost *1;
     //total += document.getElementById("appCost").value *1;
-    document.getElementById("displayTotalCost").innerHTML = total;
+    alert("This is the total: " + total);
+    return total;
  }
 
 
@@ -281,7 +283,7 @@ function clearCycle() {
 
 
  /***************************************************
- * CYCLE, APPOINTMENT AND MEDICATION CLASSES
+ * CREATE FUNCTIONS
  * *************************************************/
 function createCycle(){
     alert("createCycle() called");
@@ -302,7 +304,7 @@ function createCycle(){
     }
 
     var userDate = document.getElementById("date").value;
-    var cost = 0;
+    var cost = computeCost();
 
     alert("Just a test to see if .value is working to get the user input. Here is userType, userDate: " + userType + ", " + userDate);
     //create new cycle object using our constructor and user input
@@ -359,6 +361,11 @@ function createMedication() {
     window.localStorage.setItem("medication", JSONmed);
 }
 
+
+
+/***************************************************
+ * DISPLAY FUNCTIONS
+ * *************************************************/
 function displayCycle() {
     alert("displayCycle() called");
         
