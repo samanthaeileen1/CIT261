@@ -178,8 +178,11 @@ function saveCycle() {
 }
 
 function clearCycle() {
-   // alert("clearCycle() called.");
+   alert("clearCycle() called.");
 
+   window.localStorage.removeItem("cycle");
+   window.localStorage.removeItem("appointment");
+   window.localStorage.removeItem("medication");
 
     // document.getElementById("displayAppType").value = "";
     // document.getElementById("displayAppDate").value = "";
@@ -199,29 +202,9 @@ function clearCycle() {
     // document.getElementById("type").checked = false;
 
 
-    // window.localStorage.removeItem("type");
-    // window.localStorage.removeItem("date");
-
-    // window.localStorage.removeItem("appType");
-    // window.localStorage.removeItem("appDate");
-    // window.localStorage.removeItem("appLocation");
-    // window.localStorage.removeItem("appCost");
-    // window.localStorage.removeItem("appNotes");
-
-    // window.localStorage.removeItem("medName");
-    // window.localStorage.removeItem("medDate");
-    // window.localStorage.removeItem("medDosage");
-    // window.localStorage.removeItem("medNumDays");
-    // window.localStorage.removeItem("medTime");
-    // window.localStorage.removeItem("medCost");
-    // window.localStorage.removeItem("medNotes");
+  
 
 }
-
-// function clearCycle2() {
-//     alert("Are you sure you want to create a new cycle? This will delete your current cycle.");
-//     clearCycle();
-// }
 
 
 /***************************************************
