@@ -267,7 +267,7 @@ input[type=text], select, textarea
   }
 
   .title:hover {
-    transform:scale(1.5);
+    transform:scale(1.2);
   }
 
   /* Add a background color and some padding around the form */
