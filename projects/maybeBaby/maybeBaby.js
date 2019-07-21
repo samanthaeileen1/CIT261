@@ -296,4 +296,11 @@ function triggerMaybeBaby() {
     var welcome = document.getElementById("maybeBaby");
     welcome.classList.add("maybeBaby");
  }
+
+ function triggerOpacityAnimation() {
+    var body = document.getElementById("body");
+    body.classList.add("fade2");
+}
+
+
  

@@ -227,7 +227,6 @@ input[type=text], select, textarea
       }
     }
 
-    /* CLASS SELECTORS */
     .maybeBaby {
       transform: scaleX(0);
       transform-origin: left;
@@ -237,3 +236,13 @@ input[type=text], select, textarea
       opacity:1;
     }
 
+    .fade
+    { 
+      transition: 3s;
+      transition-delay: 1s;
+      opacity:0.0;
+    }
+    .fade2
+    {
+      opacity:1;
+    }
