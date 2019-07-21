@@ -298,8 +298,8 @@ function triggerMaybeBaby() {
  }
 
  function triggerOpacityAnimation() {
-    var body = document.getElementById("body");
-    body.classList.add("fade2");
+    var animate = document.getElementById("animate");
+    animate.classList.add("fade2");
 }
 
 

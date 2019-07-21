@@ -246,3 +246,21 @@ input[type=text], select, textarea
     {
       opacity:1;
     }
+
+
+    .noticeMe {
+    animation: wiggle 1s;
+    animation-iteration-count: 5; 
+  }
+  
+  @keyframes wiggle {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    17% { transform: translate(-1px, -2px) rotate(-1deg); }
+    38% { transform: translate(3px, 2px) rotate(0deg); }
+    50% { transform: translate(6px, -2px) rotate(1deg); }
+    60% { transform: translate(4px, 0px) rotate(0deg); }
+    75% { transform: translate(3px, 1px) rotate(-1deg); }
+    88% { transform: translate(-1px, -1px) rotate(1deg); }
+    92% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
