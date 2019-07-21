@@ -181,5 +181,9 @@ function total() {
     welcome.classList.add("welcome");
  }
  
+ function triggerOpacityAnimation() {
+   var animate = document.getElementById("animate");
+   animate.classList.add("fade2");
+ }
 
 
